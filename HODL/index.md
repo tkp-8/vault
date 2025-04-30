@@ -51,3 +51,4 @@ function helloWorld() {
   console.log("Hello, world!");
 }
 
+$$\frac{2}{3}$$
