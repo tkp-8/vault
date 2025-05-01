@@ -1,11 +1,12 @@
 ---
-title: 🗃️Theoretische_Informatik
-date: 2025-04-30 14:55
+title: 📁Hardware_Entwurf
+date: 2025-04-30 23:38
 ---
 
 ----
 
-## Index
+
+
 
 
 
