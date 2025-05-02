@@ -11,7 +11,7 @@
      
 
 - [🗄️Informatik](Informatik/index)
-    - [🗃️Technische_Informatik](Informatk/🗃️Technische_Informatik)
+    - [🗃️Technische_Informatik](Informatik/🗃️Technische_Informatik)
     - [🗃️Theoretische_Informatik](Informatik/🗃️Theoretische_Informatik)
     - [🗃️Praktische_Informatik](Informatik/🗃️Praktische_Informatik)
 
