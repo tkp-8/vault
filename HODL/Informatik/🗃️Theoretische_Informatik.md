@@ -1,0 +1,10 @@
+# 🗃️Theoretische_Informatik
+
+---
+
+---
+
+### Index
+
+---
+ 

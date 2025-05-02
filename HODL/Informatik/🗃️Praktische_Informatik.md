@@ -1,0 +1,10 @@
+# 🗃️Praktische_Informatik
+
+---
+
+---
+
+### Index
+
+---
+ 
