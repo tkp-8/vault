@@ -13,5 +13,4 @@
 
 - [🗃️Zahlentheorie](🗃️Zahlentheorie)
   - [📁Elementare_Zahlentheorie](📁Elementare_Zahlentheorie)
-  - [📁Maple](📁Maple)
        

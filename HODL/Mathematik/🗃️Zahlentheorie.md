@@ -6,8 +6,7 @@
  
 ### Index
 
-- 📁Elementare_Zahlentheorie
-- 📁Maple
+- [📁Elementare_Zahlentheorie](📁Elementare_Zahlentheorie)
 
 ---
        
