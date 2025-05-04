@@ -10,7 +10,7 @@ tags:
 $p \in \mathbb{N}$ ist eine **Primzahl**, wenn $p > 1$ und wenn $p$ **genau zwei
 positive Teiler** hat.
 
-$p$ ist **keine** Primzahl $\implies$ $p$ ist eine **zusammengesetzte Zahl**
+Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
 
 **Echte Teiler:** Alle positiven Teiler von n, die **ungleich 1** und **ungleich n** sind 
 
@@ -27,8 +27,15 @@ $p$ ist **keine** Primzahl $\implies$ $p$ ist eine **zusammengesetzte Zahl**
 
 ### Eigenschaften 
 
-- **[Primteilerexistenz](primteilerexistenz):** $\forall n \in \mathbb{N}, n \ge 2 \ \exists p \in \mathbb{P}: p \mid n$  
-- **[Satz_des_Euklid](satz_des_euklid):** Es gibt unendlich viele Primzahlen.
+- [Primteilerexistenz](primteilerexistenz): $\forall n \in \mathbb{N}, n \ge 2 \ \exists p \in \mathbb{P}: p \mid n$  
+- [Satz_des_Euklid](satz_des_euklid): Es gibt unendlich viele Primzahlen.
+
+---
+
+### Algorithmus
+
+- [Das_Sieb_des_Eratosthenes](das_sieb_des_eratosthenes): Bestimmung aller Primzahllen kleiner oder gleich einer 
+  vorgegebenen Zahl
 
 
 
@@ -36,4 +43,4 @@ $p$ ist **keine** Primzahl $\implies$ $p$ ist eine **zusammengesetzte Zahl**
 
 ----
 **Backlinks:**
-- [📂Elementare_Zahlentheorie](/📁Elementare_Zahlentheorie)
+- [📂Elementare_Zahlentheorie](📁Elementare_Zahlentheorie)

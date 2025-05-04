@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Primzahlen</title>
+  <title>Zusammengesetzte_Zahlen</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -43,50 +43,44 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Primzahlen</h1>
-<p class="date">2025-05-03 10:09</p>
+<h1 class="title">Zusammengesetzte_Zahlen</h1>
+<p class="date">2025-05-04 00:38</p>
 </header>
 <hr />
 <h3 id="definition">Definition</h3>
-<p><span class="math inline">p \in \mathbb{N}</span> ist eine
-<strong>Primzahl</strong>, wenn <span class="math inline">p &gt;
-1</span> und wenn <span class="math inline">p</span> <strong>genau zwei
-positive Teiler</strong> hat.</p>
-<p>Primzahlen <span class="math inline">\leftrightarrow</span> <a
-href="zusammengesetzte_zahlen.html">zusammengesetzte Zahlen</a></p>
-<p><strong>Echte Teiler:</strong> Alle positiven Teiler von n, die
-<strong>ungleich 1</strong> und <strong>ungleich n</strong> sind</p>
-<p><strong>Primteiler <span class="math inline">p</span> von <span
-class="math inline">n</span></strong>: <span class="math inline">p \in
-\mathbb{P}</span> und <span class="math inline">p\mid n</span></p>
-<hr />
-<h3 id="maple">🍁Maple</h3>
-<p><code>isprime</code><span class="math inline">\to true/false</span> :
-Ueberpruefung ob Primzahl</p>
-<p><code>nextprime/prevprime</code><span class="math inline">\to
-int</span> : naechste/letzte Primzahl</p>
+<p><span class="math inline">n</span> ist eine zusammengesetzte Zahl,
+wenn <span class="math inline">n\in
+\mathbb{N}\setminus\mathbb{P}</span></p>
 <hr />
 <h3 id="eigenschaften">Eigenschaften</h3>
-<ul>
-<li><a href="primteilerexistenz.html">Primteilerexistenz</a>: <span
-class="math inline">\forall n \in \mathbb{N}, n \ge 2 \ \exists p \in
-\mathbb{P}: p \mid n</span><br />
-</li>
-<li><a href="satz_des_euklid.html">Satz_des_Euklid</a>: Es gibt
-unendlich viele Primzahlen.</li>
-</ul>
-<hr />
-<h3 id="algorithmus">Algorithmus</h3>
-<ul>
-<li><a
-href="das_sieb_des_eratosthenes.html">Das_Sieb_des_Eratosthenes</a>:
-Bestimmung aller Primzahllen kleiner oder gleich einer vorgegebenen
-Zahl</li>
-</ul>
+<p><strong>Lemma 1:</strong> Sei <span class="math inline">n \in
+\mathbb{N}</span> eine zusammengesetze Zahl. Dann hat n einen Teiler d,
+mit <span class="math inline">1&lt;d\le \sqrt{n}</span><br />
+<strong>Beweis:</strong> <span class="math inline">n</span> ist eine
+zusammengesetzte zahl <span class="math inline">\Leftrightarrow
+n=d_{1}d_{2}</span> mit <span class="math inline">d_{1},d_{2}\in
+\mathbb{N}</span> beide groesser als 1. Falls beide groesser als <span
+class="math inline">\sqrt{n}</span> sind, so folgt <span
+class="math inline">n=d_{1}d_{1}&gt;\sqrt{n}\sqrt{n}=n</span>, also
+<span class="math inline">n&gt;n</span> und dies ist ein Widerspuch.</p>
+<p><strong>Lemma 2:</strong> Sei <span class="math inline">n\in
+\mathbb{N}</span> eine zusammengesetzte Zahl. Dann hat <span
+class="math inline">n</span> einen Primteiler <span
+class="math inline">p</span> mit <span class="math inline">1&lt;p\le
+\sqrt{n}</span><br />
+<strong>Beweis:</strong> Mit Lemma 1 hat n einen Teiler d mit <span
+class="math inline">1&lt;d\le \sqrt{n}</span>. Nach der <a
+href="primteilerexistenz.html">Primteilerexistenz</a> hat <span
+class="math inline">d</span> einen Primteiler <span
+class="math inline">p</span>. Es gilt also <span
+class="math inline">1&lt;p\le d\le \sqrt{2}</span>. Da <span
+class="math inline">p\mid d</span> und <span class="math inline">d\mid
+n</span>, folgt <span class="math inline">p\mid n</span>, und wir sind
+fertig.</p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a
-href="📁Elementare_Zahlentheorie.html">📂Elementare_Zahlentheorie</a></p>
+href="primzahlen.html">Primzahlen</a></p>
 <script>
 renderMathInElement(
     document.body,
