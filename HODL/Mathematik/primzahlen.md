@@ -16,6 +16,10 @@ Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
 
 **Primteiler $p$ von $n$**: $p \in \mathbb{P}$ und $p\mid n$  
 
+**Primzahlzwillinge:** $\{(p,p+2) \mid p,p+2 \in \mathbb{P}\}$
+
+[Primzahldrillinge](primzahldrillinge): $\{(p,p+2,p+4) \mid p,p+2,p+4 \in \mathbb{P}\}$
+
 ---
 
 ### 🍁Maple
@@ -29,10 +33,12 @@ Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
 
 - [Primteilerexistenz](primteilerexistenz): $\forall n \in \mathbb{N}, n \ge 2 \ \exists p \in \mathbb{P}: p \mid n$  
 - [Satz_des_Euklid](satz_des_euklid): Es gibt unendlich viele Primzahlen.
+- [Primzahldrillinge](primzahldrillinge): Ausser $(3,5,7)$ gibt es keine weiteren Primzahldrillinge.
+- Primabstand: Es gibt beliebig grosse Loecher zwischen Primzahlen
 
 ---
 
-### Algorithmus
+### Algorithmen
 
 - [Das_Sieb_des_Eratosthenes](das_sieb_des_eratosthenes): Bestimmung aller Primzahllen kleiner oder gleich einer 
   vorgegebenen Zahl
