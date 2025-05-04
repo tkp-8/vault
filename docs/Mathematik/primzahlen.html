@@ -49,12 +49,20 @@
 </header>
 <hr />
 <h3 id="definition">Definition</h3>
+<h5 id="primzahlen">Primzahlen</h5>
 <p><span class="math inline">p \in \mathbb{N}</span> ist eine
 <strong>Primzahl</strong>, wenn <span class="math inline">p &gt;
 1</span> und wenn <span class="math inline">p</span> <strong>genau zwei
 positive Teiler</strong> hat</p>
 <p>Primzahlen <span class="math inline">\leftrightarrow</span> <a
 href="zusammengesetzte_zahlen.html">zusammengesetzte Zahlen</a></p>
+<h5 id="mersennesche-primzahlen"><a
+href="mersenne&#39;sche_primzahlen.html">Mersenne’sche
+Primzahlen</a></h5>
+<p>Primzahlen der Form <span class="math inline">p=2^{n}-1</span>, <span
+class="math inline">n\in \mathbb{N}</span></p>
+<hr />
+<h3 id="terminologie">Terminologie</h3>
 <p><strong>Echte Teiler:</strong> Alle positiven Teiler von n, die
 <strong>ungleich 1</strong> und <strong>ungleich n</strong> sind</p>
 <p><strong>Primteiler <span class="math inline">p</span> von <span
@@ -65,15 +73,18 @@ class="math inline">\{(p,p+2) \mid p,p+2 \in \mathbb{P}\}</span></p>
 <p><a href="primzahldrillinge.html">Primzahldrillinge</a>: <span
 class="math inline">\{(p,p+2,p+4) \mid p,p+2,p+4 \in
 \mathbb{P}\}</span></p>
-<p><strong>Primzahlfunktion:</strong> <span class="math inline">\pi:
-\mathbb{R}\to \mathbb{N}_0</span>, ordnet jeder reellen Zahl x die
-Anzahl der Primzahlen <span class="math inline">\le x</span> zu</p>
+<p><strong>Primzahlfunktion <span class="math inline">\pi
+(x)</span>:</strong> <span class="math inline">\pi: \mathbb{R}\to
+\mathbb{N}_0</span>, ordnet jeder reellen Zahl x die Anzahl der
+Primzahlen <span class="math inline">\le x</span> zu</p>
 <hr />
 <h3 id="maple">🍁Maple</h3>
-<p><code>isprime</code><span class="math inline">\to true/false</span> :
-Ueberpruefung ob Primzahl</p>
-<p><code>nextprime/prevprime</code><span class="math inline">\to
-int</span> : naechste/letzte Primzahl</p>
+<p><code>isprime(n:int)</code><span class="math inline">\to
+true/false</span> : Ueberpruefung ob Primzahl</p>
+<p><code>nextprime(n:int)/prevprime(n:int)</code><span
+class="math inline">\to int</span> : naechste/letzte Primzahl</p>
+<p><code>pi(x:R+)</code><span class="math inline">\to int</span>: <span
+class="math inline">\pi (x)</span></p>
 <hr />
 <h3 id="eigenschaften">Eigenschaften</h3>
 <ul>

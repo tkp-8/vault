@@ -1,6 +1,8 @@
-<div style="text-align:center;">
-# [-----------[ HODL ]-----------] 
-</div>
+---
+title: ❄️-----------[ HODL ]-----------❄️
+date: 2025-05-04 05:58
+tags: Index
+---
 ---
 
 ---

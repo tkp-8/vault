@@ -1,5 +1,8 @@
-# 🗄️Informatik
-
+---
+title: 🗄️Informatik
+date: 2025-05-04 05:58
+tags: Index
+---
 ---
 
 ---
@@ -15,7 +18,6 @@
     - [📁Rechnernetze](📁Rechnernetze)
 
 - [🗃️Theoretische_Informatik](🗃️Theoretische_Informatik)
-    - 
  
 - [🗃️Praktische_Informatik](🗃️Praktische_Informatik)
 

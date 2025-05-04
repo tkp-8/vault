@@ -7,10 +7,18 @@ tags:
 ----
 
 ### Definition
+##### Primzahlen
 $p \in \mathbb{N}$ ist eine **Primzahl**, wenn $p > 1$ und wenn $p$ **genau zwei
 positive Teiler** hat
 
 Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
+
+##### [Mersenne'sche Primzahlen](mersenne'sche_primzahlen)
+Primzahlen der Form $p=2^{n}-1$, $n\in \mathbb{N}$
+
+---
+
+### Terminologie
 
 **Echte Teiler:** Alle positiven Teiler von n, die **ungleich 1** und **ungleich n** sind 
 
@@ -20,15 +28,17 @@ Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
 
 [Primzahldrillinge](primzahldrillinge): $\{(p,p+2,p+4) \mid p,p+2,p+4 \in \mathbb{P}\}$
 
-**Primzahlfunktion:** $\pi: \mathbb{R}\to \mathbb{N}_0$, ordnet jeder reellen Zahl x die 
+**Primzahlfunktion $\pi (x)$:** $\pi: \mathbb{R}\to \mathbb{N}_0$, ordnet jeder reellen Zahl x die 
 Anzahl der Primzahlen $\le x$ zu
 
 ---
 
 ### 🍁Maple
-`isprime`$\to true/false$ : Ueberpruefung ob Primzahl 
+`isprime(n:int)`$\to true/false$ : Ueberpruefung ob Primzahl 
 
-`nextprime/prevprime`$\to int$ : naechste/letzte Primzahl
+`nextprime(n:int)/prevprime(n:int)`$\to int$ : naechste/letzte Primzahl
+
+`pi(x:R+)`$\to int$: $\pi (x)$
 
 ---
 
