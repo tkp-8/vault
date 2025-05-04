@@ -8,7 +8,7 @@ tags:
 
 ### Definition
 $p \in \mathbb{N}$ ist eine **Primzahl**, wenn $p > 1$ und wenn $p$ **genau zwei
-positive Teiler** hat.
+positive Teiler** hat
 
 Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
 
@@ -19,6 +19,9 @@ Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
 **Primzahlzwillinge:** $\{(p,p+2) \mid p,p+2 \in \mathbb{P}\}$
 
 [Primzahldrillinge](primzahldrillinge): $\{(p,p+2,p+4) \mid p,p+2,p+4 \in \mathbb{P}\}$
+
+**Primzahlfunktion:** $\pi: \mathbb{R}\to \mathbb{N}_0$, ordnet jeder reellen Zahl x die 
+Anzahl der Primzahlen $\le x$ zu
 
 ---
 
@@ -34,7 +37,7 @@ Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
 - [Primteilerexistenz](primteilerexistenz): $\forall n \in \mathbb{N}, n \ge 2 \ \exists p \in \mathbb{P}: p \mid n$  
 - [Satz_des_Euklid](satz_des_euklid): Es gibt unendlich viele Primzahlen.
 - [Primzahldrillinge](primzahldrillinge): Ausser $(3,5,7)$ gibt es keine weiteren Primzahldrillinge.
-- Primabstand: Es gibt beliebig grosse Loecher zwischen Primzahlen
+- [Primabstand](primabstand): Es gibt beliebig grosse Loecher zwischen Primzahlen
 
 ---
 

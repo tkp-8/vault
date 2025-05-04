@@ -45,13 +45,14 @@
 <header id="title-block-header">
 <h1 class="title">Primzahlen</h1>
 <p class="date">2025-05-03 10:09</p>
+<div class="tags">Tags: </div>
 </header>
 <hr />
 <h3 id="definition">Definition</h3>
 <p><span class="math inline">p \in \mathbb{N}</span> ist eine
 <strong>Primzahl</strong>, wenn <span class="math inline">p &gt;
 1</span> und wenn <span class="math inline">p</span> <strong>genau zwei
-positive Teiler</strong> hat.</p>
+positive Teiler</strong> hat</p>
 <p>Primzahlen <span class="math inline">\leftrightarrow</span> <a
 href="zusammengesetzte_zahlen.html">zusammengesetzte Zahlen</a></p>
 <p><strong>Echte Teiler:</strong> Alle positiven Teiler von n, die
@@ -59,6 +60,14 @@ href="zusammengesetzte_zahlen.html">zusammengesetzte Zahlen</a></p>
 <p><strong>Primteiler <span class="math inline">p</span> von <span
 class="math inline">n</span></strong>: <span class="math inline">p \in
 \mathbb{P}</span> und <span class="math inline">p\mid n</span></p>
+<p><strong>Primzahlzwillinge:</strong> <span
+class="math inline">\{(p,p+2) \mid p,p+2 \in \mathbb{P}\}</span></p>
+<p><a href="primzahldrillinge.html">Primzahldrillinge</a>: <span
+class="math inline">\{(p,p+2,p+4) \mid p,p+2,p+4 \in
+\mathbb{P}\}</span></p>
+<p><strong>Primzahlfunktion:</strong> <span class="math inline">\pi:
+\mathbb{R}\to \mathbb{N}_0</span>, ordnet jeder reellen Zahl x die
+Anzahl der Primzahlen <span class="math inline">\le x</span> zu</p>
 <hr />
 <h3 id="maple">🍁Maple</h3>
 <p><code>isprime</code><span class="math inline">\to true/false</span> :
@@ -74,9 +83,14 @@ class="math inline">\forall n \in \mathbb{N}, n \ge 2 \ \exists p \in
 </li>
 <li><a href="satz_des_euklid.html">Satz_des_Euklid</a>: Es gibt
 unendlich viele Primzahlen.</li>
+<li><a href="primzahldrillinge.html">Primzahldrillinge</a>: Ausser <span
+class="math inline">(3,5,7)</span> gibt es keine weiteren
+Primzahldrillinge.</li>
+<li><a href="primabstand.html">Primabstand</a>: Es gibt beliebig grosse
+Loecher zwischen Primzahlen</li>
 </ul>
 <hr />
-<h3 id="algorithmus">Algorithmus</h3>
+<h3 id="algorithmen">Algorithmen</h3>
 <ul>
 <li><a
 href="das_sieb_des_eratosthenes.html">Das_Sieb_des_Eratosthenes</a>:
