@@ -9,5 +9,9 @@ tags: Index
 ---
 
 ### Index
+- [Computer](computer)
+- Rechenwerk
+- Leitwerk
+- Speicher 
 
 ---

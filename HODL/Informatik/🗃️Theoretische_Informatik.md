@@ -10,5 +10,10 @@ tags: Index
 
 ### Index
 
+
+- [📁Grundlagen_Theoretische_Informatik](📁Grundlagen_Theoretische_Informatik)
+- [📁Formale_Sprachen&Automaten](📁Formale_Sprachen&Automaten) 
+- 📁Berechenbarkeitstheorie
+- 📁Komplexitaetstheorie
 ---
  

@@ -8,8 +8,8 @@ tags: Index
 ---
 - [🗄️Mathematik](Mathematik/index)
     - [🗃️Analysis](Mathematik/🗃️Analysis)
+    - [🗃️Arithmetik](Mathematik/🗃️Arithmetik)
     - [🗃️Lineare_Algebra](Mathematik/🗃️Lineare_Algebra)
-    - [🗃️Zahlentheorie](Mathematik/🗃️Zahlentheorie)
      
 
 - [🗄️Informatik](Informatik/index)
@@ -22,5 +22,6 @@ tags: Index
  
 
 - [🗄️Sonstiges](Sonstiges/index)
+
 
 

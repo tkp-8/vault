@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Mersenne’sche Primzahlen</title>
+  <title>Sprachen</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -43,39 +43,51 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Mersenne’sche Primzahlen</h1>
-<p class="date">2025-05-04 09:46</p>
+<h1 class="title">Sprachen</h1>
+<p class="date">2025-05-06 05:01</p>
 <div class="tags">Tags: </div>
 </header>
 <hr />
 <h3 id="definition">Definition</h3>
-<p>Die <span class="math inline">n</span>-te <strong>Mersenne’sche
-Zahl</strong> <span class="math inline">M_n</span> hat die form <span
-class="math inline">M_n=2^n-1</span> mit <span class="math inline">n\in
-\mathbb{N}</span>. Ist <span class="math inline">M_n</span> eine <a
-href="primzahlen.html">Primzahl</a>, so wird sie <strong>Mersenne’sche
-Primzahl</strong> genannt.</p>
-<hr />
-<h3 id="eigenschaften">Eigenschaften</h3>
-<p>Seien <span class="math inline">a,n\in \mathbb{N}</span> mit <span
-class="math inline">n\ge 2</span></p>
-<p><strong>Proposition 1:</strong> Wenn <span
-class="math inline">a^{n}-1</span> eine Primzahl ist, dann ist <span
-class="math inline">a=2</span>.<br />
-<strong>Beweis:</strong> <span class="math display">
-  a^{n}-1 = (a-1)(a^{n-1} + a^{n-2} + \cdots + a+1)
-</span> Wenn <span class="math inline">a^{n-1}</span> eine Primzahl ist,
-dann muss der Teiler <span class="math inline">a-1</span> von <span
-class="math inline">a^{n}-1</span> gerade 1, also <span
-class="math inline">a=2</span> sein.</p>
-<p><strong>Proposition 2:</strong> Wenn <span
-class="math inline">2^{n}-1</span> eine Primzahl ist, dann ist <span
-class="math inline">n</span> eine Primzahl<br />
-<strong>Beweis:</strong></p>
+<h5 id="sprache">Sprache</h5>
+<p>Eine Menge von <a href="woerter.html">Woertern</a></p>
+<h5 id="komplement">Komplement</h5>
+<p>Komplement der Sprache <span class="math inline">L</span>:<br />
+Die Sprache <span class="math inline">\Sigma ^{*}\setminus L</span></p>
+<h3 id="notation">Notation</h3>
+<p><strong>Konkatenation</strong> <span
+class="math inline">\circ</span><br />
+Seien <span class="math inline">L_{1},L_{2}</span> Sprachen aus dem
+selben <a href="alphabet.html">Alphabet</a> <span
+class="math inline">L_{1}\circ L_{2}\coloneqq \{uv\mid u\in L_{1} \
+\text{und} \ v\in L_{2}\}</span></p>
+<p><span class="math display">
+  L^{k}\coloneqq \{w_{1}\cdots w_k\mid \forall i\le k:w_i \in L\}   
+</span></p>
+<p><span class="math display">
+  L^{1}\coloneqq L,\quad L^{0}\coloneqq \{\varepsilon\}, \quad
+L^{*}\coloneqq
+  \bigcup_{k =  0}^{\infty}L^{k}, \quad L^{+} \coloneqq
+\bigcup_{k=1}^{\infty}L^{k}       
+</span></p>
+<p><strong>Komplement</strong><br />
+<span class="math inline">\overline{L}</span></p>
+<p><strong>Spiegelung</strong><br />
+<span class="math inline">\overleftarrow{L}\coloneqq
+\{\overleftarrow{w}\mid w\in L\}</span></p>
+<h3 id="beispiel">Beispiel</h3>
+<p><strong>Entscheidungsproblem:</strong> “Ist die Zahl <span
+class="math inline">x</span> eine Primzahl?” <span class="math display">
+  L_{prim} = \{\text{bin}(x)\in \{\texttt{0},\texttt{1}\}^{*}\mid x \
+\text{ist Primzahl}   \}  
+</span> Das Problem reduziert sich darauf, zu entscheiden, ob ein
+Wort(<span class="math inline">\text{bin}(x)</span>) aus einer gegebenen
+Sprache(<span class="math inline">L_{prim})</span> ist <span
+class="math inline">\to</span> <strong>Wortproblem</strong></p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a
-href="primzahlen.html">Primzahlen</a></p>
+href="/📁Grundlagen_Theoretische_Informatik.html">📂Grundlagen_Theoretische_Informatik</a></p>
 <script>
 renderMathInElement(
     document.body,

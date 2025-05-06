@@ -14,6 +14,6 @@ tags: Index
 
 - [🗃️Lineare_Algebra](🗃️Lineare_Algebra)
 
-- [🗃️Zahlentheorie](🗃️Zahlentheorie)
+- [🗃️Arithmetik](🗃️Arithmetik)
   - [📁Elementare_Zahlentheorie](📁Elementare_Zahlentheorie)
        
