@@ -18,6 +18,12 @@ tags: Index
     - [📁Rechnernetze](📁Rechnernetze)
 
 - [🗃️Theoretische_Informatik](🗃️Theoretische_Informatik)
+
+    - [📁Grundlagen_Theoretische_Informatik](📁Grundlagen_Theoretische_Informatik)
+    - [📁Formale_Sprachen&Automaten](📁Formale_Sprachen&Automaten) 
+    - [📁Berechenbarkeitstheorie](📁Berechenbarkeitstheorie)
+    - [📁Komplexitaetstheorie](📁Komplexitaetstheorie)
+ 
  
 - [🗃️Praktische_Informatik](🗃️Praktische_Informatik)
 

@@ -72,6 +72,5 @@ $\overleftarrow{u}=\texttt{bba}$
 
 ----
 **Backlinks:**
+- [📁Formale_Sprachen&Automaten](📁Formale_Sprachen&Automaten)
 - [Kodierung](kodierung)
-
-

@@ -14,6 +14,8 @@ Eine Menge von [Woertern](woerter)
 Komplement der Sprache $L$: \
 Die Sprache $\Sigma ^{*}\setminus L$
 
+---
+
 ### Notation
 **Konkatenation** $\circ$\
 Seien $L_{1},L_{2}$ Sprachen aus dem selben [Alphabet](alphabet)
@@ -34,6 +36,8 @@ $\overline{L}$
 **Spiegelung**\
 $\overleftarrow{L}\coloneqq \{\overleftarrow{w}\mid w\in L\}$
 
+---
+
 ### Beispiel
 **Entscheidungsproblem:** "Ist die Zahl $x$ eine Primzahl?"
 $$
@@ -48,4 +52,4 @@ ist $\to$ **Wortproblem**
 
 ----
 **Backlinks:**
-- [📂Grundlagen_Theoretische_Informatik](/📁Grundlagen_Theoretische_Informatik)
+- [📁Formale_Sprachen&Automaten](📁Formale_Sprachen&Automaten)

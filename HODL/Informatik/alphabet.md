@@ -26,4 +26,4 @@ z.B. $\Sigma=\{\texttt{a},\texttt{b},\texttt{c},\texttt{d}, \ldots \}$
 
 ----
 **Backlinks:**
-- [📂Grundlagen_Theoretische_Informatik](/📁Grundlagen_Theoretische_Informatik)
+- [📁Formale_Sprachen&Automaten](📁Formale_Sprachen&Automaten)
