@@ -8,15 +8,22 @@ tags:
 
 ### Definition  
 ##### Deterministischer Endlicher Automat $M$
-$M=(Q,\Sigma, \delta, q_{0}, F)$
+$M\coloneqq (Q,\Sigma, \delta, q_{0}, F)$
 
-- $Q$ eine endliche nich-leere Menge, genannt **Zusatsmenge**
-- $\Sigma$ ein (endliches) [Alphabet](alphabet)
-- $\delta$ eine Funktion $\delta:Q\times \Sigma \to Q$, genannt **Uebergangsfunktion**
-- $q_{0}$ ein Element aus $Q$, genannt **Startzustand**
-- $F$ eine Teilmenge von $Q$, genannt Menge der **akzeptierten Zustaende**
+> - $Q$ eine endliche nich-leere Menge, genannt **Zusatsmenge**
+> - $\Sigma$ ein (endliches) [Alphabet](alphabet)
+> - $\delta$ eine Funktion $\delta:Q\times \Sigma \to Q$, genannt **Uebergangsfunktion**
+> - $q_{0}$ ein Element aus $Q$, genannt **Startzustand**
+> - $F$ eine Teilmenge von $Q$, genannt Menge der **akzeptierten Zustaende**
 
-##### Iterierte Uebergangsfunktion
+##### Sprache eines DEAs
+$$
+  L(M)\coloneqq \{w\in \Sigma ^{*}\mid \delta ^{*}(q_{0},w)\in F  \}  
+$$
+
+---
+
+### Iterierte Uebergangsfunktion
 Sei $\delta$ die Uebergangsfunktion eines DEAs, dann definieren wir fuer alle $q\in Q$
 $$
     \delta ^0(q,\varepsilon) = q
@@ -31,17 +38,6 @@ $$
     \delta ^{*}(q,w) \coloneqq \delta ^{|w|}(q,w) 
 $$
 
-##### Sprache eines DEAs
-$$
-  L(M)\coloneqq \{w\in \Sigma ^{*}\mid \delta ^{*}(q_{0},w)\in F  \}  
-$$
-
-
----
-
-### Besonderheit
-- Nur **ein Folgezustand** moeglich 
- 
 ---
 
 ### Beispiel 

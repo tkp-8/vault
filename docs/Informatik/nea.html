@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>DEA</title>
+  <title>NEA</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -43,16 +43,19 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">DEA</h1>
-<p class="date">2025-05-07 01:13</p>
+<h1 class="title">NEA</h1>
+<p class="date">2025-05-07 06:16</p>
 <div class="tags">Tags: </div>
 </header>
 <hr />
 <h3 id="definition">Definition</h3>
-<h5 id="deterministischer-endlicher-automat-m">Deterministischer
+<h5
+id="nichtdeterministischer-endlicher-automat-m">Nichtdeterministischer
 Endlicher Automat <span class="math inline">M</span></h5>
 <p><span class="math inline">M\coloneqq (Q,\Sigma, \delta, q_{0},
-F)</span></p>
+F)</span><br />
+<span class="math inline">\mathcal{P}(X)\coloneqq \{Y\mid Y\subseteq
+X\}</span></p>
 <blockquote>
 <ul>
 <li><span class="math inline">Q</span> eine endliche nich-leere Menge,
@@ -60,8 +63,8 @@ genannt <strong>Zusatsmenge</strong></li>
 <li><span class="math inline">\Sigma</span> ein (endliches) <a
 href="alphabet.html">Alphabet</a></li>
 <li><span class="math inline">\delta</span> eine Funktion <span
-class="math inline">\delta:Q\times \Sigma \to Q</span>, genannt
-<strong>Uebergangsfunktion</strong></li>
+class="math inline">\delta:Q\times (\Sigma \cup \{\varepsilon\}) \to
+\mathcal{P}(Q)</span>, genannt <strong>Uebergangsfunktion</strong></li>
 <li><span class="math inline">q_{0}</span> ein Element aus <span
 class="math inline">Q</span>, genannt <strong>Startzustand</strong></li>
 <li><span class="math inline">F</span> eine Teilmenge von <span
@@ -69,67 +72,22 @@ class="math inline">Q</span>, genannt Menge der <strong>akzeptierten
 Zustaende</strong></li>
 </ul>
 </blockquote>
-<h5 id="sprache-eines-deas">Sprache eines DEAs</h5>
-<p><span class="math display">
-  L(M)\coloneqq \{w\in \Sigma ^{*}\mid \delta ^{*}(q_{0},w)\in F  \}  
+<h5 id="varepsilon-uebergaenge"><span
+class="math inline">\varepsilon</span>-Uebergaenge</h5>
+<p>Zustandsuebergang, <strong>ohne</strong> ein Zeichen der Eingabe zu
+lesen</p>
+<p>Sei <span class="math inline">E(p)</span> die Menge aller Zustaende,
+die wir von <span class="math inline">p</span> aus erreichen koennen,
+ohne ein Zeichen zu lesen <span class="math display">
+  E(p)\coloneqq \{q\mid q \text{ ist von } p \text{ durch eine Sequenz
+von }\ge 0 \ \varepsilon\text{-
+Uebergaengen erreichbar}\}  
+</span> Fuer Mengen <span class="math inline">P\subseteq Q</span>
+definieren wir <span class="math display">
+  E(P)\coloneqq \bigcup_{p \in  P}E(p)
 </span></p>
 <hr />
 <h3 id="iterierte-uebergangsfunktion">Iterierte Uebergangsfunktion</h3>
-<p>Sei <span class="math inline">\delta</span> die Uebergangsfunktion
-eines DEAs, dann definieren wir fuer alle <span class="math inline">q\in
-Q</span> <span class="math display">
-    \delta ^0(q,\varepsilon) = q
-</span> und fuer alle <span class="math inline">i&gt;0</span> und alle
-Woerter <span class="math inline">w=ua\in \Sigma ^{i}</span> mit <span
-class="math inline">u\in \Sigma ^{i-1}</span> und <span
-class="math inline">a \in \Sigma</span> <span class="math display">
-    \delta ^{i}(q,w) = \delta(\delta ^{i-1}(q,u),a)
-</span> <strong>Iterierte Uebergangsfunktion</strong> <span
-class="math inline">\delta ^{*}:Q\times \Sigma ^{*}\to Q</span> <span
-class="math display">
-    \delta ^{*}(q,w) \coloneqq \delta ^{|w|}(q,w)
-</span></p>
-<hr />
-<h3 id="beispiel">Beispiel</h3>
-<p><span class="math inline">M_{1}=(Q,\Sigma,\delta,q_{0},F)</span> mit
-<span class="math inline">Q=\{q_{0},q_{1}\},
-\Sigma=\{\texttt{a},\texttt{b}\}, F=\{q_{0}\}</span></p>
-<table>
-<thead>
-<tr class="header">
-<th><span class="math inline">q\in Q</span></th>
-<th><span class="math inline">x\in \Sigma</span></th>
-<th><span class="math inline">\delta(q,x)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">q_{0}</span></td>
-<td><span class="math inline">\texttt{a}</span></td>
-<td><span class="math inline">q_{1}</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">q_{0}</span></td>
-<td><span class="math inline">\texttt{b}</span></td>
-<td><span class="math inline">q_{0}</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">q_{1}</span></td>
-<td><span class="math inline">\texttt{a}</span></td>
-<td><span class="math inline">q_{0}</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">q_{1}</span></td>
-<td><span class="math inline">\texttt{b}</span></td>
-<td><span class="math inline">q_{1}</span></td>
-</tr>
-</tbody>
-</table>
-<p><img src="img/dea_1.png" /></p>
-<p><span class="math display">
-  L(M_{1}) = \{w\in \{\texttt{a},\texttt{b}\}^{*}\mid w \text{ enthaelt
-gerade Anzahl von } \texttt{a}\text{s}\}  
-</span></p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a

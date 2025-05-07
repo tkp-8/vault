@@ -13,7 +13,7 @@ Modell zur Darstellung eines **Zustandsueberganssystems** mit begrenztem Speiche
 
 ##### Sprache des Automaten
 $L(M)$: Menge aller Woerter, die der Automat $M$ akzeptiert\
-**Regulaere Sprachen:** [Sprachen](sprachen) fuer die es einen endlichen Automaten gibt
+**[Regulaere Sprachen](regulaere_sprachen):** [Sprachen](sprachen) fuer die es einen endlichen Automaten gibt
 
 ##### $w$-Lauf
 Wenn der Lauf sich auf die Eingabe $w$ bezieht\
@@ -27,15 +27,15 @@ Wenn der Lauf sich auf die Eingabe $w$ bezieht\
 - EA **akzeptiert**/**verwirft** das Eingabewort
 - Lesen des Wortes erfolgt nur **zeichenweise**
 - EA kann waehrend der Verarbeitung endlich viele **Zustaende** annehmen
-- **Zustandsuebergang** haengt vom aktuellen Zeichen der Eingabe ab
-- **Endzustand** bestimmt den Ausgabewert
+- **Zustandsuebergang** haengt vom aktuellen Zeichen der Eingabe ab (Ausnahme $\varepsilon$-Uebergaenge)
+- **Endzustaende** bestimmen den Ausgabewert
 
 ---
 
-### Unterscheidungen
-[DEA](dea): Nur ein Folgezustand moeglich
+### Berechnungsmodelle
+[DEA](dea): Immer **eindeutiger** Folgezustand
 
-NEA: Mehrere oder keine Folgezustaende moeglich
+[NEA](nea): **Mehrere** oder **keine** Folgezustaende moeglich
 
 ---
 

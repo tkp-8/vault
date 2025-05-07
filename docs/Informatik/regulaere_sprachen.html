@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Endliche Automaten</title>
+  <title>Regulaere Sprachen</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -43,57 +43,57 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Endliche Automaten</h1>
-<p class="date">2025-05-06 08:36</p>
+<h1 class="title">Regulaere Sprachen</h1>
+<p class="date">2025-05-07 05:42</p>
 <div class="tags">Tags: </div>
 </header>
 <hr />
 <h3 id="definition">Definition</h3>
-<h5 id="endlicher-automat">Endlicher Automat</h5>
-<p>Modell zur Darstellung eines
-<strong>Zustandsueberganssystems</strong> mit begrenztem Speicher</p>
-<h5 id="sprache-des-automaten">Sprache des Automaten</h5>
-<p><span class="math inline">L(M)</span>: Menge aller Woerter, die der
-Automat <span class="math inline">M</span> akzeptiert<br />
-<strong><a href="regulaere_sprachen">Regulaere Sprachen</a>:</strong> <a
-href="sprachen.html">Sprachen</a> fuer die es einen endlichen Automaten
-gibt</p>
-<h5 id="w-lauf"><span class="math inline">w</span>-Lauf</h5>
-<p>Wenn der Lauf sich auf die Eingabe <span class="math inline">w</span>
-bezieht<br />
-<strong>akzeptierender</strong> Lauf/<strong>verwerfender</strong>
-Lauf</p>
-<hr />
-<h3 id="eigenschaften">Eigenschaften</h3>
+<p><a href="sprachen">Sprache</a> zu der es einen sie definierenden <a
+href="regulaerer_ausdruck.html">regulaerer_ausdruck</a> gibt</p>
+<p>Jede der folgenden Bedingungen ist aequivalent zur Regularitaed einer
+Sprache <span class="math inline">L</span></p>
 <ul>
-<li>Loesen des <strong>Wortproblems</strong> von bestimmten formalen
-Sprachen</li>
-<li><strong>Eingabe:</strong> <a href="woerter.html">Wort</a>,
-<strong>Ausgabe:</strong> Wahrheitswert, ob Eingabe ein Element der
-zugehoerigen Sprache</li>
-<li>EA <strong>akzeptiert</strong>/<strong>verwirft</strong> das
-Eingabewort</li>
-<li>Lesen des Wortes erfolgt nur <strong>zeichenweise</strong></li>
-<li>EA kann waehrend der Verarbeitung endlich viele
-<strong>Zustaende</strong> annehmen</li>
-<li><strong>Zustandsuebergang</strong> haengt vom aktuellen Zeichen der
-Eingabe ab (Ausnahme <span
-class="math inline">\varepsilon</span>-Uebergaenge)</li>
-<li><strong>Endzustaende</strong> bestimmen den Ausgabewert</li>
+<li>Es gibt einen <a href="endliche_automaten.html">endlichen
+Automaten</a>, der die Sprache akzeptiert</li>
+<li><span class="math inline">L</span> wird von einer regulaeren
+Grammatik erzeugt</li>
 </ul>
-<hr />
-<h3 id="berechnungsmodelle">Berechnungsmodelle</h3>
-<p><a href="dea.html">DEA</a>: Immer <strong>eindeutiger</strong>
-Folgezustand</p>
-<p><a href="nea.html">NEA</a>: <strong>Mehrere</strong> oder
-<strong>keine</strong> Folgezustaende moeglich</p>
-<hr />
-<h3 id="zustandsdiagramm">Zustandsdiagramm</h3>
-<p><img src="img/ea_1.png" /></p>
+<h3 id="satz">Satz</h3>
+<h5 id="jede-endliche-sprache-ist-regulaer">Jede endliche Sprache ist
+regulaer</h5>
+<p><strong>Beweis.</strong> Sei <span class="math inline">L\subseteq
+\Sigma ^{*}</span> eine endliche Sprache. <span
+class="math inline">l</span>: laengstes Wort, <span
+class="math inline">\Sigma=\{\texttt{a},\texttt{b}\}</span><br />
+Wir muessen zeigen, dass es einen <a href="dea.html">DEA</a> <span
+class="math inline">M</span> fuer <span class="math inline">L</span>
+existiert.<br />
+</p>
+<ul>
+<li>Grundstruktur des Zustandsdiagramms entspricht einem <a
+href="binaerer_baum.html">binearen Baum</a>
+<ul>
+<li>Tiefe <span class="math inline">l</span></li>
+<li>von einem inneren Knoten gibt es zweit Kanten: <span
+class="math inline">\texttt{a}</span> und <span
+class="math inline">\texttt{b}</span></li>
+<li>Wurzel: Startzustand</li>
+</ul></li>
+<li>fuer jeden Knoten existiert genau einen Pfad von der Wurzel</li>
+<li>Zustand <span class="math inline">q_w</span>, wenn <span
+class="math inline">w</span> das <a href="woerter.html">Wort</a>, das
+man lesen muss, um ihn zu erreichen</li>
+<li><span class="math inline">F=\{q_w\mid w\in L\}</span></li>
+<li><strong>Muellzustand</strong> <span class="math inline">q_-</span>
+fuer <span class="math inline">|w|&gt;l</span></li>
+<li><strong>Allgemein:</strong> <span class="math inline">k</span>-aerer
+Baum mit <span class="math inline">k=|\Sigma|</span></li>
+</ul>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a
-href="📁Formale_Sprachen&amp;Automaten.html">📂Formale_Sprachen&amp;Automaten</a></p>
+href="endliche_automaten.html">Endliche Automaten</a></p>
 <script>
 renderMathInElement(
     document.body,
