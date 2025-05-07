@@ -13,7 +13,7 @@ positive Teiler** hat
 
 Primzahlen $\leftrightarrow$ [zusammengesetzte Zahlen](zusammengesetzte_zahlen)
 
-##### [Mersenne'sche Primzahlen](mersenne'sche_primzahlen)
+##### [Mersenne'sche Primzahlen](mersennesche_primzahlen)
 Primzahlen der Form $p=2^{n}-1$, $n\in \mathbb{N}$
 
 ---
