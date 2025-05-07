@@ -16,15 +16,30 @@ $M=(Q,\Sigma, \delta, q_{0}, F)$
 - $q_{0}$ ein Element aus $Q$, genannt **Startzustand**
 - $F$ eine Teilmenge von $Q$, genannt Menge der **akzeptierten Zustaende**
 
+##### Iterierte Uebergangsfunktion
+Sei $\delta$ die Uebergangsfunktion eines DEAs, dann definieren wir fuer alle $q\in Q$
+$$
+    \delta ^0(q,\varepsilon) = q
+$$
+und fuer alle $i>0$ und alle Woerter $w=ua\in \Sigma ^{i}$ mit $u\in \Sigma ^{i-1}$
+und $a \in \Sigma$
+$$
+    \delta ^{i}(q,w) = \delta(\delta ^{i-1}(q,u),a) 
+$$
+**Iterierte Uebergangsfunktion** $\delta ^{*}:Q\times \Sigma ^{*}\to Q$
+$$
+    \delta ^{*}(q,w) \coloneqq \delta ^{|w|}(q,w) 
+$$
+
+##### Sprache eines DEAs
+$$
+  L(M)\coloneqq \{w\in \Sigma ^{*}\mid \delta ^{*}(q_{0},w)\in F  \}  
+$$
+
+
 ---
 
-### Besonderheiten
-- Loesen des **Wortproblems** von bestimmten formalen Sprachen
-- **Eingabe:** [Wort](woerter), **Ausgabe:** Wahrheitswert, ob Eingabe Element der zugehoerigen Sprache
-- DEA **akzeptiert**/**verwirft** das Eingabewort
-- Lesen des Wortes erfolgt nur **zeichenweise**
-- DEA kann waehrend der Verarbeitung endlich viele **Zustaende** annehmen
-- **Zustandsuebergang** haengt vom aktuellen Zeichen der Eingabe ab
+### Besonderheit
 - Nur **ein Folgezustand** moeglich 
  
 ---
@@ -38,8 +53,11 @@ $M_{1}=(Q,\Sigma,\delta,q_{0},F)$ mit $Q=\{q_{0},q_{1}\}, \Sigma=\{\texttt{a},\t
 | $q_{0}$ |  $\texttt{b}$ | $q_{0}$  |
 |  $q_{1}$ |$\texttt{a}$   |  $q_{0}$ |
 | $q_{1}$  | $\texttt{b}$  |  $q_{1}$ |
+![](img/dea_1.png)
 
-![](/img/dea_1.png)
+$$
+  L(M_{1}) = \{w\in \{\texttt{a},\texttt{b}\}^{*}\mid w \text{ enthaelt gerade Anzahl von } \texttt{a}\text{s}\}  
+$$
 
 
 

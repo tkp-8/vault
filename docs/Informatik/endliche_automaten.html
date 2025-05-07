@@ -50,49 +50,43 @@
 <hr />
 <h3 id="definition">Definition</h3>
 <h5 id="endlicher-automat">Endlicher Automat</h5>
-<p>Modell zur Darstellung eines Zustandsueberganssystems mit begrenztem
-Speicher</p>
+<p>Modell zur Darstellung eines
+<strong>Zustandsueberganssystems</strong> mit begrenztem Speicher</p>
 <h5 id="sprache-des-automaten">Sprache des Automaten</h5>
 <p><span class="math inline">L(M)</span>: Menge aller Woerter, die der
-Automat <span class="math inline">M</span> akzeptiert</p>
-<p><strong>Regulaere Sprachen:</strong> <a
-href="sprachen.html">Sprachen</a> von endlichen Automaten</p>
+Automat <span class="math inline">M</span> akzeptiert<br />
+<strong>Regulaere Sprachen:</strong> <a
+href="sprachen.html">Sprachen</a> fuer die es einen endlichen Automaten
+gibt</p>
+<h5 id="w-lauf"><span class="math inline">w</span>-Lauf</h5>
+<p>Wenn der Lauf sich auf die Eingabe <span class="math inline">w</span>
+bezieht<br />
+<strong>akzeptierender</strong> Lauf/<strong>verwerfender</strong>
+Lauf</p>
 <hr />
-<h3 id="unterscheidungen">Unterscheidungen</h3>
-<p><a href="dea.html">DEA</a> NEA</p>
-<h3 id="der-deterministische-endliche-automat-dea">Der Deterministische
-Endliche Automat (DEA)</h3>
+<h3 id="eigenschaften">Eigenschaften</h3>
 <ul>
 <li>Loesen des <strong>Wortproblems</strong> von bestimmten formalen
 Sprachen</li>
-<li>Eingabe: <a href="woerter.html">Wort</a>, Ausgabe: Wahrheitswert, ob
-Eingabe Element der zugehoerigen Sprache</li>
-<li>DEA <strong>akzeptiert</strong>/<strong>verwirft</strong> das
+<li><strong>Eingabe:</strong> <a href="woerter.html">Wort</a>,
+<strong>Ausgabe:</strong> Wahrheitswert, ob Eingabe ein Element der
+zugehoerigen Sprache</li>
+<li>EA <strong>akzeptiert</strong>/<strong>verwirft</strong> das
 Eingabewort</li>
 <li>Lesen des Wortes erfolgt nur <strong>zeichenweise</strong></li>
-<li>DEA kann waehrend der Verarbeitung endlich viele
+<li>EA kann waehrend der Verarbeitung endlich viele
 <strong>Zustaende</strong> annehmen</li>
 <li><strong>Zustandsuebergang</strong> haengt vom aktuellen Zeichen der
 Eingabe ab</li>
+<li><strong>Endzustand</strong> bestimmt den Ausgabewert</li>
 </ul>
-<h5 id="definition-1">Definition</h5>
-<p>Ein DEA <span class="math inline">M</span> wird durch eine Tupel
-<span class="math inline">(Q,\Sigma, \delta, q_{0}, F)</span>
-dargestellt</p>
-<ul>
-<li><span class="math inline">Q</span> eine endliche nich-leere Menge,
-genannt <strong>Zusatsmenge</strong></li>
-<li><span class="math inline">\Sigma</span> ein (endliches) <a
-href="alphabet.html">Alphabet</a></li>
-<li><span class="math inline">\delta</span> eine Funktion <span
-class="math inline">\delta:Q\times \Sigma \to Q</span>, genannt
-<strong>Uebergangsfunktion</strong></li>
-<li><span class="math inline">q_{0}</span> ein Element aus <span
-class="math inline">Q</span>, genannt <strong>Startzustand</strong></li>
-<li><span class="math inline">F</span> eine Teilmenge von <span
-class="math inline">Q</span>, genannt Menge der <strong>akzeptierten
-Zustaende</strong></li>
-</ul>
+<hr />
+<h3 id="unterscheidungen">Unterscheidungen</h3>
+<p><a href="dea.html">DEA</a>: Nur ein Folgezustand moeglich</p>
+<p>NEA: Mehrere oder keine Folgezustaende moeglich</p>
+<hr />
+<h3 id="zustandsdiagramm">Zustandsdiagramm</h3>
+<p><img src="img/ea_1.png" /></p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a

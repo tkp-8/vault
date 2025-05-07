@@ -66,21 +66,28 @@ class="math inline">Q</span>, genannt <strong>Startzustand</strong></li>
 class="math inline">Q</span>, genannt Menge der <strong>akzeptierten
 Zustaende</strong></li>
 </ul>
+<h5 id="iterierte-uebergangsfunktion">Iterierte Uebergangsfunktion</h5>
+<p>Sei <span class="math inline">\delta</span> die Uebergangsfunktion
+eines DEAs, dann definieren wir fuer alle <span class="math inline">q\in
+Q</span> <span class="math display">
+    \delta ^0(q,\varepsilon) = q
+</span> und fuer alle <span class="math inline">i&gt;0</span> und alle
+Woerter <span class="math inline">w=ua\in \Sigma ^{i}</span> mit <span
+class="math inline">u\in \Sigma ^{i-1}</span> und <span
+class="math inline">a \in \Sigma</span> <span class="math display">
+    \delta ^{i}(q,w) = \delta(\delta ^{i-1}(q,u),a)
+</span> <strong>Iterierte Uebergangsfunktion</strong> <span
+class="math inline">\delta ^{*}:Q\times \Sigma ^{*}\to Q</span> <span
+class="math display">
+    \delta ^{*}(q,w) \coloneqq \delta ^{|w|}(q,w)
+</span></p>
+<h5 id="sprache-eines-deas">Sprache eines DEAs</h5>
+<p><span class="math display">
+  L(M)\coloneqq \{w\in \Sigma ^{*}\mid \delta ^{*}(q_{0},w)\in F  \}  
+</span></p>
 <hr />
-<h3 id="besonderheiten">Besonderheiten</h3>
+<h3 id="besonderheit">Besonderheit</h3>
 <ul>
-<li>Loesen des <strong>Wortproblems</strong> von bestimmten formalen
-Sprachen</li>
-<li><strong>Eingabe:</strong> <a href="woerter.html">Wort</a>,
-<strong>Ausgabe:</strong> Wahrheitswert, ob Eingabe Element der
-zugehoerigen Sprache</li>
-<li>DEA <strong>akzeptiert</strong>/<strong>verwirft</strong> das
-Eingabewort</li>
-<li>Lesen des Wortes erfolgt nur <strong>zeichenweise</strong></li>
-<li>DEA kann waehrend der Verarbeitung endlich viele
-<strong>Zustaende</strong> annehmen</li>
-<li><strong>Zustandsuebergang</strong> haengt vom aktuellen Zeichen der
-Eingabe ab</li>
 <li>Nur <strong>ein Folgezustand</strong> moeglich</li>
 </ul>
 <hr />
@@ -119,7 +126,11 @@ Eingabe ab</li>
 </tr>
 </tbody>
 </table>
-<p><img src="/img/dea_1.png" /></p>
+<p><img src="img/dea_1.png" /></p>
+<p><span class="math display">
+  L(M_{1}) = \{w\in \{\texttt{a},\texttt{b}\}^{*}\mid w \text{ enthaelt
+gerade Anzahl von } \texttt{a}\text{s}\}  
+</span></p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a

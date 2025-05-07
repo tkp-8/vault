@@ -8,39 +8,40 @@ tags:
 
 ### Definition 
 ##### Endlicher Automat
-Modell zur Darstellung eines Zustandsueberganssystems mit begrenztem Speicher
+Modell zur Darstellung eines **Zustandsueberganssystems** mit begrenztem Speicher
 
 
 ##### Sprache des Automaten
-$L(M)$: Menge aller Woerter, die der Automat $M$ akzeptiert
+$L(M)$: Menge aller Woerter, die der Automat $M$ akzeptiert\
+**Regulaere Sprachen:** [Sprachen](sprachen) fuer die es einen endlichen Automaten gibt
 
-**Regulaere Sprachen:** [Sprachen](sprachen) von endlichen Automaten
+##### $w$-Lauf
+Wenn der Lauf sich auf die Eingabe $w$ bezieht\
+**akzeptierender** Lauf/**verwerfender** Lauf
+
+---
+
+### Eigenschaften
+- Loesen des **Wortproblems** von bestimmten formalen Sprachen
+- **Eingabe:** [Wort](woerter), **Ausgabe:** Wahrheitswert, ob Eingabe ein Element der zugehoerigen Sprache
+- EA **akzeptiert**/**verwirft** das Eingabewort
+- Lesen des Wortes erfolgt nur **zeichenweise**
+- EA kann waehrend der Verarbeitung endlich viele **Zustaende** annehmen
+- **Zustandsuebergang** haengt vom aktuellen Zeichen der Eingabe ab
+- **Endzustand** bestimmt den Ausgabewert
 
 ---
 
 ### Unterscheidungen
-[DEA](dea)
-NEA
+[DEA](dea): Nur ein Folgezustand moeglich
 
-### Der Deterministische Endliche Automat (DEA)
-- Loesen des **Wortproblems** von bestimmten formalen Sprachen
-- Eingabe: [Wort](woerter), Ausgabe: Wahrheitswert, ob Eingabe Element der zugehoerigen Sprache
-- DEA **akzeptiert**/**verwirft** das Eingabewort
-- Lesen des Wortes erfolgt nur **zeichenweise**
-- DEA kann waehrend der Verarbeitung endlich viele **Zustaende** annehmen
-- **Zustandsuebergang** haengt vom aktuellen Zeichen der Eingabe ab
- 
-##### Definition
-Ein DEA $M$ wird durch eine Tupel $(Q,\Sigma, \delta, q_{0}, F)$ dargestellt
+NEA: Mehrere oder keine Folgezustaende moeglich
 
-- $Q$ eine endliche nich-leere Menge, genannt **Zusatsmenge**
-- $\Sigma$ ein (endliches) [Alphabet](alphabet)
-- $\delta$ eine Funktion $\delta:Q\times \Sigma \to Q$, genannt **Uebergangsfunktion**
-- $q_{0}$ ein Element aus $Q$, genannt **Startzustand**
-- $F$ eine Teilmenge von $Q$, genannt Menge der **akzeptierten Zustaende**
+---
 
+### Zustandsdiagramm
 
-
+![](img/ea_1.png)
 
 ----
 
