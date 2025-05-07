@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Satz_des_Euklid</title>
+  <title>Endliche Automaten</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -43,36 +43,60 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Satz_des_Euklid</h1>
-<p class="date">2025-05-03 12:40</p>
+<h1 class="title">Endliche Automaten</h1>
+<p class="date">2025-05-06 08:36</p>
 <div class="tags">Tags: </div>
 </header>
 <hr />
-<h3 id="satz">Satz</h3>
-<h5 id="es-gibt-unendlich-viele-primzahlen.">Es gibt unendlich viele
-Primzahlen.</h5>
+<h3 id="definition">Definition</h3>
+<h5 id="endlicher-automat">Endlicher Automat</h5>
+<p>Modell zur Darstellung eines Zustandsueberganssystems mit begrenztem
+Speicher</p>
+<h5 id="sprache-des-automaten">Sprache des Automaten</h5>
+<p><span class="math inline">L(M)</span>: Menge aller Woerter, die der
+Automat <span class="math inline">M</span> akzeptiert</p>
+<p><strong>Regulaere Sprachen:</strong> <a
+href="sprachen.html">Sprachen</a> von endlichen Automaten</p>
 <hr />
-<h3 id="beweis">Beweis</h3>
-<p><strong>Verfahren:</strong> Indirekter Beweis</p>
-<p>Annahme: Es gaebe nur endlich viele Primzahlen. Nennen wir diese
-<span class="math inline">p_{1},\ldots,p_r</span>.</p>
-<p>Wir bilden <span class="math display">
-  n = p_{1}\cdot p_{2}\cdots p_{r-1}\cdot p_r +1
-</span> Nach der <a
-href="primteilerexistenz.html">Primteilerexistenz</a> ist jede
-natuerliche Zahl <span class="math inline">n</span> durch eine Primzahl
-teilbar. Da es nur endlich viele Primzahlen gibt, muss p eine der <span
-class="math inline">p_{1},\ldots, p_r</span> sein. Dann gilt <span
-class="math display">
-  p\mid n \text{ und } p\mid (p_{1}\cdot p_{2}\cdots p_r), \text{ also }
-p\mid (n-p_{1}\cdot p_{2}\cdots p_r)
-</span> Es gilt also <span class="math inline">p\mid 1</span>. Dies ist
-ein Wiederspruch, denn <span class="math inline">p&gt;1</span>. Die
-Annahme ist falsch gewesen und daraus folgt die Behauptung.</p>
+<h3 id="unterscheidungen">Unterscheidungen</h3>
+<p><a href="dea.html">DEA</a> NEA</p>
+<h3 id="der-deterministische-endliche-automat-dea">Der Deterministische
+Endliche Automat (DEA)</h3>
+<ul>
+<li>Loesen des <strong>Wortproblems</strong> von bestimmten formalen
+Sprachen</li>
+<li>Eingabe: <a href="woerter.html">Wort</a>, Ausgabe: Wahrheitswert, ob
+Eingabe Element der zugehoerigen Sprache</li>
+<li>DEA <strong>akzeptiert</strong>/<strong>verwirft</strong> das
+Eingabewort</li>
+<li>Lesen des Wortes erfolgt nur <strong>zeichenweise</strong></li>
+<li>DEA kann waehrend der Verarbeitung endlich viele
+<strong>Zustaende</strong> annehmen</li>
+<li><strong>Zustandsuebergang</strong> haengt vom aktuellen Zeichen der
+Eingabe ab</li>
+</ul>
+<h5 id="definition-1">Definition</h5>
+<p>Ein DEA <span class="math inline">M</span> wird durch eine Tupel
+<span class="math inline">(Q,\Sigma, \delta, q_{0}, F)</span>
+dargestellt</p>
+<ul>
+<li><span class="math inline">Q</span> eine endliche nich-leere Menge,
+genannt <strong>Zusatsmenge</strong></li>
+<li><span class="math inline">\Sigma</span> ein (endliches) <a
+href="alphabet.html">Alphabet</a></li>
+<li><span class="math inline">\delta</span> eine Funktion <span
+class="math inline">\delta:Q\times \Sigma \to Q</span>, genannt
+<strong>Uebergangsfunktion</strong></li>
+<li><span class="math inline">q_{0}</span> ein Element aus <span
+class="math inline">Q</span>, genannt <strong>Startzustand</strong></li>
+<li><span class="math inline">F</span> eine Teilmenge von <span
+class="math inline">Q</span>, genannt Menge der <strong>akzeptierten
+Zustaende</strong></li>
+</ul>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a
-href="/primzahlen.html">Primzahlen</a></p>
+href="📁Formale_Sprachen&amp;Automaten.html">📂Formale_Sprachen&amp;Automaten</a></p>
 <script>
 renderMathInElement(
     document.body,

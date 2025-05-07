@@ -1,5 +1,5 @@
 ---
-title: 📂Formale_Sprachen&Automaten
+title: 📂Formale Sprachen & Automaten
 date: 2025-05-04 05:58
 tags: Index
 --- 
@@ -13,6 +13,7 @@ tags: Index
 - [Woerter](woerter)
 - [Alphabet](alphabet)
 - [Sprachen](sprachen)
+- [Endliche Automaten](endliche_automaten)
 
 
 ---
