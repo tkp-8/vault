@@ -7,8 +7,8 @@ tags:
 ----
 
 ### Definition 
-##### Nichtdeterministischer Endlicher Automat $M$
-$M\coloneqq (Q,\Sigma, \delta, q_{0}, F)$\
+##### Nichtdeterministischer Endlicher Automat $N$
+$N\coloneqq (Q,\Sigma, \delta, q_{0}, F)$\
 $\mathcal{P}(X)\coloneqq \{Y\mid Y\subseteq X\}$
 
 > - $Q$ eine endliche nich-leere Menge, genannt **Zusatsmenge**
@@ -31,16 +31,31 @@ $$
   E(P)\coloneqq \bigcup_{p \in  P}E(p) 
 $$
 
+##### Sprache eines NEAs 
+Sei $N$ ein NEA, dann ist die von $N$ akzeptierte [Sprachen](sprachen) definiert als
+$$
+  L(N)\coloneqq \{w\in \Sigma ^{*}\mid \delta ^{*}(\{q_{0}\},w)\cap F \neq \empty\}  
+$$
+D.h. es muss mindestens einen **akzeptierenden $w$-Lauf** geben, damit $w \in L(N)$
+
+
 ---
 
 ### Iterierte Uebergangsfunktion 
-
-
-
-
-
-
-
+Sei $\delta$ die Uebergangsfunktion eines NEAs, dann definieren wir fuer 
+alle $P\subseteq Q$
+$$
+  \delta ^{0}(P,\varepsilon) = E(P) 
+$$
+und fuer alle $i>0$ und alle Woerter $w=ua\in \Sigma ^{i}$ mit $u\in \Sigma ^{i-1}$
+und $a\in \Sigma$
+$$
+  \delta ^{i}(P,w) = E\left( \bigcup\nolimits_{r \in \delta ^{i-1}(P,u)}\delta(r,a) \right) 
+$$
+**Iterale Uebergangsfunktion** $\delta ^{*}:\mathcal{P}(Q)\times \Sigma ^{*}\to \mathcal{P}(Q)$
+$$
+  \delta ^{*}(P,w) \coloneqq \delta ^{|w|}(P,w)  
+$$
 
 
 ----

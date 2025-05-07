@@ -7,6 +7,7 @@ tags:
 ----
 
 ### Definition
+
 [Sprache](sprachen) zu der es einen sie definierenden [regulaerer_ausdruck](regulaerer_ausdruck) gibt
 
 Jede der folgenden Bedingungen ist aequivalent zur Regularitaed einer Sprache 
@@ -14,6 +15,9 @@ $L$
  
 - Es gibt einen [endlichen Automaten](endliche_automaten), der die Sprache akzeptiert 
 - $L$ wird von einer regulaeren Grammatik erzeugt
+$$
+  REG \coloneqq \{L\mid L\text{ ist regulaer}\}  
+$$
 
 
 ### Satz

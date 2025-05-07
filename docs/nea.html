@@ -50,9 +50,9 @@
 <hr />
 <h3 id="definition">Definition</h3>
 <h5
-id="nichtdeterministischer-endlicher-automat-m">Nichtdeterministischer
-Endlicher Automat <span class="math inline">M</span></h5>
-<p><span class="math inline">M\coloneqq (Q,\Sigma, \delta, q_{0},
+id="nichtdeterministischer-endlicher-automat-n">Nichtdeterministischer
+Endlicher Automat <span class="math inline">N</span></h5>
+<p><span class="math inline">N\coloneqq (Q,\Sigma, \delta, q_{0},
 F)</span><br />
 <span class="math inline">\mathcal{P}(X)\coloneqq \{Y\mid Y\subseteq
 X\}</span></p>
@@ -86,8 +86,33 @@ Uebergaengen erreichbar}\}
 definieren wir <span class="math display">
   E(P)\coloneqq \bigcup_{p \in  P}E(p)
 </span></p>
+<h5 id="sprache-eines-neas">Sprache eines NEAs</h5>
+<p>Sei <span class="math inline">N</span> ein NEA, dann ist die von
+<span class="math inline">N</span> akzeptierte <a
+href="sprachen.html">Sprachen</a> definiert als <span
+class="math display">
+  L(N)\coloneqq \{w\in \Sigma ^{*}\mid \delta ^{*}(\{q_{0}\},w)\cap F
+\neq \empty\}  
+</span> D.h. es muss mindestens einen <strong>akzeptierenden <span
+class="math inline">w</span>-Lauf</strong> geben, damit <span
+class="math inline">w \in L(N)</span></p>
 <hr />
 <h3 id="iterierte-uebergangsfunktion">Iterierte Uebergangsfunktion</h3>
+<p>Sei <span class="math inline">\delta</span> die Uebergangsfunktion
+eines NEAs, dann definieren wir fuer alle <span
+class="math inline">P\subseteq Q</span> <span class="math display">
+  \delta ^{0}(P,\varepsilon) = E(P)
+</span> und fuer alle <span class="math inline">i&gt;0</span> und alle
+Woerter <span class="math inline">w=ua\in \Sigma ^{i}</span> mit <span
+class="math inline">u\in \Sigma ^{i-1}</span> und <span
+class="math inline">a\in \Sigma</span> <span class="math display">
+  \delta ^{i}(P,w) = E\left( \bigcup\nolimits_{r \in \delta
+^{i-1}(P,u)}\delta(r,a) \right)
+</span> <strong>Iterale Uebergangsfunktion</strong> <span
+class="math inline">\delta ^{*}:\mathcal{P}(Q)\times \Sigma ^{*}\to
+\mathcal{P}(Q)</span> <span class="math display">
+  \delta ^{*}(P,w) \coloneqq \delta ^{|w|}(P,w)  
+</span></p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a

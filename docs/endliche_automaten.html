@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Das_Sieb_des_Eratosthenes</title>
+  <title>Endliche Automatenend</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -43,42 +43,57 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Das_Sieb_des_Eratosthenes</h1>
-<p class="date">2025-05-03 10:20</p>
-<div class="tags">Tags: <span class="tag">algorithmus</span> </div>
+<h1 class="title">Endliche Automatenend</h1>
+<p class="date">2025-05-06 08:36</p>
+<div class="tags">Tags: </div>
 </header>
 <hr />
-<h3 id="algorithmus">Algorithmus</h3>
-<h5
-id="sei-nin-mathbbn.-die-ausgabe-ist-die-liste-aller-primzahlen-le-n.">Sei
-<span class="math inline">n\in \mathbb{N}</span>. Die Ausgabe ist die
-Liste aller Primzahlen <span class="math inline">\le n</span>.</h5>
-<ol type="1">
-<li>(Initialisierung) Sei <span
-class="math inline">P=[2,3,\ldots,n]</span> die Liste der Zahlen von 2
-bis <span class="math inline">n</span>. Sei <span
-class="math inline">i=1</span>. (Wir benutzen <span
-class="math inline">p_i</span> zur Berechnung des <span
-class="math inline">i</span>-ten Elements in <span
-class="math inline">P</span>.)</li>
-<li>(Sind wir fertig?) Wenn <span class="math inline">p_i</span> nicht
-existiert oder <span class="math inline">p_i&gt;\sqrt{n}</span>, gehe zu
-Schritt 4.</li>
-<li>(Streiche Vielfache von <span class="math inline">p_i</span>)
-Streiche alle <span class="math inline">kp_i</span> von <span
-class="math inline">P</span>, fuer die <span class="math inline">k\in
-\mathbb{N}</span> und <span class="math inline">2\le k\le
-\frac{n}{p_i}</span> gilt. Setze so lange <span
-class="math inline">i</span> auf <span class="math inline">i+1</span>,
-bis <span class="math inline">p_i</span> die naechste nicht gestrichene
-Zahl in der Liste ist, und gehe zu Schritt 2.</li>
-<li>(Ausgabe) Gib <span class="math inline">P</span> aus und beende den
-Algorithmus.</li>
-</ol>
+<h3 id="definition">Definition</h3>
+<h5 id="endlicher-automat">Endlicher Automat</h5>
+<p>Modell zur Darstellung eines
+<strong>Zustandsueberganssystems</strong> mit begrenztem Speicher</p>
+<h5 id="sprache-des-automaten">Sprache des Automaten</h5>
+<p><span class="math inline">L(M)</span>: Menge aller Woerter, die der
+Automat <span class="math inline">M</span> akzeptiert<br />
+<strong><a href="regulaere_sprachen">Regulaere Sprachen</a>:</strong> <a
+href="sprachen.html">Sprachen</a> fuer die es einen endlichen Automaten
+gibt</p>
+<h5 id="w-lauf"><span class="math inline">w</span>-Lauf</h5>
+<p>Wenn der Lauf sich auf die Eingabe <span class="math inline">w</span>
+bezieht<br />
+<strong>akzeptierender</strong> Lauf/<strong>verwerfender</strong>
+Lauf</p>
+<hr />
+<h3 id="eigenschaften">Eigenschaften</h3>
+<ul>
+<li>Loesen des <strong>Wortproblems</strong> von bestimmten formalen
+Sprachen</li>
+<li><strong>Eingabe:</strong> <a href="woerter.html">Wort</a>,
+<strong>Ausgabe:</strong> Wahrheitswert, ob Eingabe ein Element der
+zugehoerigen Sprache</li>
+<li>EA <strong>akzeptiert</strong>/<strong>verwirft</strong> das
+Eingabewort</li>
+<li>Lesen des Wortes erfolgt nur <strong>zeichenweise</strong></li>
+<li>EA kann waehrend der Verarbeitung endlich viele
+<strong>Zustaende</strong> annehmen</li>
+<li><strong>Zustandsuebergang</strong> haengt vom aktuellen Zeichen der
+Eingabe ab (Ausnahme <span
+class="math inline">\varepsilon</span>-Uebergaenge)</li>
+<li><strong>Endzustaende</strong> bestimmen den Ausgabewert</li>
+</ul>
+<hr />
+<h3 id="berechnungsmodelle">Berechnungsmodelle</h3>
+<p><a href="dea.html">DEA</a>: Immer <strong>eindeutiger</strong>
+Folgezustand</p>
+<p><a href="nea.html">NEA</a>: <strong>Mehrere</strong> oder
+<strong>keine</strong> Folgezustaende moeglich</p>
+<hr />
+<h3 id="zustandsdiagramm">Zustandsdiagramm</h3>
+<p><img src="img/ea_1.png" /></p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a
-href="/📁Elementare_Zahlentheorie.html">📂Elementare_Zahlentheorie</a></p>
+href="📁Formale_Sprachen&amp;Automaten.html">📂Formale_Sprachen&amp;Automaten</a></p>
 <script>
 renderMathInElement(
     document.body,

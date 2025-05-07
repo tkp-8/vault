@@ -1,5 +1,5 @@
 ---
-title: Endliche Automaten
+title: Endliche Automatenend
 date: 2025-05-06 08:36
 tags: 
 ---
@@ -36,6 +36,8 @@ Wenn der Lauf sich auf die Eingabe $w$ bezieht\
 [DEA](dea): Immer **eindeutiger** Folgezustand
 
 [NEA](nea): **Mehrere** oder **keine** Folgezustaende moeglich
+
+[Potenzautomat](potenzautomat): Konstruiert aus einem **NEA** ein **DEA**
 
 ---
 

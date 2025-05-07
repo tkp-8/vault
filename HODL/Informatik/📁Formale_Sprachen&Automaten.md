@@ -13,7 +13,12 @@ tags: Index
 - [Woerter](woerter)
 - [Alphabet](alphabet)
 - [Sprachen](sprachen)
+- [Regulaere Sprachen](regulaere_sprachen)
+- [regulaerer_ausdruck](regulaerer_ausdruck)
 - [Endliche Automaten](endliche_automaten)
+- [DEA](dea)
+- [NEA](nea)
+- [Potenzautomat](potenzautomat)
 
 
 ---
