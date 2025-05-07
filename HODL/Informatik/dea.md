@@ -39,7 +39,7 @@ $M_{1}=(Q,\Sigma,\delta,q_{0},F)$ mit $Q=\{q_{0},q_{1}\}, \Sigma=\{\texttt{a},\t
 |  $q_{1}$ |$\texttt{a}$   |  $q_{0}$ |
 | $q_{1}$  | $\texttt{b}$  |  $q_{1}$ |
 
-![](/img/dea_1.png)
+![fff](/img/dea_1.png)
 
 
 
