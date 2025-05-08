@@ -49,6 +49,7 @@
 </header>
 <hr />
 <h3 id="definition">Definition</h3>
+<h5 id="regulaerer-ausdruck-ra">Regulaerer Ausdruck (RA)</h5>
 <p>Fuer ein <a href="alphabet">Alphabet</a> <span
 class="math inline">\Sigma</span> bezeichnen wir <a
 href="woerter.html">Woerter</a> ueber <span class="math inline">\Sigma
@@ -64,6 +65,66 @@ class="math inline">T</span> regulaere Ausdruecke sind, dann auch <span
 class="math inline">(S+T),(S\cdot T)</span> und <span
 class="math inline">(S)^{*}</span></li>
 </ul>
+<h5 id="sprache-eines-ra">Sprache eines RA</h5>
+<p>Sei <span class="math inline">R</span> ein RA, dann bezeichnen wir
+dessen Sprache mit <span class="math inline">L(R)</span>. Die Sprache
+<span class="math inline">L(R)</span> definiert sich induktiv wie folg
+(<span class="math inline">S</span> und <span
+class="math inline">T</span> sind andere RAs)</p>
+<ul>
+<li><span class="math inline">R=\empty\implies L(R)=\empty</span></li>
+<li><span class="math inline">R=a, \ a\in \Sigma \cup \{\varepsilon\}
+\implies L(R)=\{a\}</span></li>
+<li><span class="math inline">R=(S+T)\implies L(R)=L(S)\cup
+L(T)</span></li>
+<li><span class="math inline">R=(S\cdot T)\implies L(R)=L(S)\circ
+L(T)</span></li>
+<li><span class="math inline">R=(S)^{*} \implies L(R) =
+L(S)^{*}</span></li>
+</ul>
+<hr />
+<h3 id="beispiele">Beispiele</h3>
+<p><span class="math inline">R_{1} =
+(\texttt{0}+\texttt{1})^{*}\texttt{0101}(\texttt{0}+\texttt{1})^{*}</span></p>
+<ul>
+<li><span
+class="math inline">\Sigma=\{\texttt{0},\texttt{1}\}</span></li>
+<li><strong>Praefix:</strong> <span
+class="math inline">(\texttt{0}+\texttt{1})^{*}</span>, also ein wort
+aus <span class="math inline">\Sigma ^{*}</span></li>
+<li><strong>Teilwort:</strong> <span
+class="math inline">\texttt{0101}</span></li>
+<li><strong>Suffix:</strong> <span
+class="math inline">(\texttt{0}+\texttt{1})^{*}</span>, also ein wort
+aus <span class="math inline">\Sigma ^{*}</span> <span
+class="math display">
+L(R_{1})=\{w\in \Sigma ^{*}\mid w \text{ enthaelt} \texttt{ 0101 }
+\text{als Teilwort}\}  
+</span></li>
+</ul>
+<p><span
+class="math inline">R_2=\empty+(\texttt{b}^{*}\texttt{ab}^{*}\texttt{ab}^{*})^{*}</span></p>
+<ul>
+<li><span class="math inline">\Sigma =
+\{\texttt{a},\texttt{b}\}</span></li>
+<li><span
+class="math inline">(\texttt{b}^{*}\texttt{ab}^{*}\texttt{ab}^{*})^{*}</span>:
+genau zwei <span class="math inline">\texttt{a}</span>s und beliebig
+viele <span class="math inline">\texttt{b}</span>s davor und dahinter
+<span class="math display">
+\begin{align*}
+L(R_{3}) &amp;= L(\empty) \cup \{w\in \Sigma ^{*} \mid w \text{ enthaelt
+gerade Anzahl an } \texttt{a}s\}\\
+&amp;= \{w\in \Sigma ^{*} \mid w \text{ enthaelt gerade Anzahl an }
+\texttt{a}s\}  
+\end{align*}
+</span></li>
+</ul>
+<hr />
+<h3 id="satz-1">Satz 1</h3>
+<h5 id="sei-r-ein-regulaerer-ausdruck-dann-ist-lr-regulaer">Sei <span
+class="math inline">R</span> ein regulaerer Ausdruck, dann ist <span
+class="math inline">L(R)</span> regulaer</h5>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a

@@ -8,11 +8,10 @@ tags:
 
 ### Definition
 
-[Sprache](sprachen) zu der es einen sie definierenden [regulaerer_ausdruck](regulaerer_ausdruck) gibt
-
-Jede der folgenden Bedingungen ist aequivalent zur Regularitaed einer Sprache 
+Jede der folgenden Bedingungen ist aequivalent zur Regularitaed einer [Sprache](sprachen) 
 $L$
  
+- es gibt einen sie definierenden [regulaeren Ausdruck](regulaerer_ausdruck) 
 - Es gibt einen [endlichen Automaten](endliche_automaten), der die Sprache akzeptiert 
 - $L$ wird von einer regulaeren Grammatik erzeugt
 $$
