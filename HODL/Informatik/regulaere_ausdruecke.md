@@ -55,6 +55,7 @@ $$
 
 ### Satz 1
 ##### Sei $R$ ein regulaerer Ausdruck, dann ist $L(R)$ regulaer
+**Beweis.** [satz_von_kleene](satz_von_kleene)
 
 
 

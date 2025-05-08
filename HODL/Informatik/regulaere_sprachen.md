@@ -38,8 +38,16 @@ Wir muessen zeigen, dass es einen [DEA](dea) $M$ fuer $L$ existiert.\
 
 ---
 
-### Satz 2
-##### Die regulaeren Sprachen $REG$ sind unter Vereinigung abgeschlossen
+### Satz 2 
+##### Sei $L$ eine regulaere Sprache, dann existiert ein regulaerer Ausdruck $R$ mit $L(R)=L$
+**Beweis.** [satz_von_kleene](satz_von_kleene)
+
+---
+
+### Abschlusseigenschaften
+##### Die regulaeren Sprachen $REG$ sind unter folgenden Operationen abgeschlossen
+
+- **Vereinigung**\
 **Beweis.** Verfahren: Produktautomat.\
 Seien $L_{1},L_{2}$ regulaere Sprachen mit den zugehoerigen DEAs $M_{1}, M_{2}$. 
 Wir konstruieren einen DEA $M_{3}=(Q_{3},\Sigma,\delta_{3},q_{3},F_{3})$, der 
@@ -54,21 +62,21 @@ Als Letztes legen wir die Menge $F_{3}$ fest.
 $$
   F_{3}\coloneqq \{(p,q)\in Q_{3}\mid p \in F_{1} \text{ oder } q \in F_{2}\}  
 $$
-
-
-**Alternativ:** NEA Konstruktion.
+**Alternativer Beweis:** NEA Konstruktion.
 ![](img/reg_1.png)
 
-### Satz 3 
-##### Die regulaeren Sprachen $REG$ sind unter Konkatenation und Kleene Stern abgeschlossen
+- **Konkatenation** \
 **Beweis.** Verfahren: NEA Konstruktion. \
-**Konkatenation:** Seien $L_{1},L_{2}$ regulaere Sprachen mit den zugehoerigen DEAs $M_{1}, M_{2}$. 
+Seien $L_{1},L_{2}$ regulaere Sprachen mit den zugehoerigen DEAs $M_{1}, M_{2}$. 
 Wir konstruieren einen NEA $N$, 
 welcher die Sprache $L(M_{3})=L_{1}\circ L_{2}$ akzeptiert. Fuer jeden akzeptierten 
 Zustand von $M_{1}$ fuegen wir einen $\varepsilon$-Uebergang zum Startzustand von $M_{2}$ 
 hinzu. \
 Als akzeptierende Zustaende von $N$ waehlen wir nur die akzeptierenden Zustaende von $M_{2}$\
-**Kleene Stern:** Sei $L\in REG$ und $M$ ein DEA, welcher $L$ akzeptiert. Wir fuegen 
+
+- **Kleene Stern** \
+**Beweis.** Verfahren: NEA Konstruktion. \
+Sei $L\in REG$ und $M$ ein DEA, welcher $L$ akzeptiert. Wir fuegen 
 einen neuen Startzustand ein, der gleichzeitig ein akzeptierender Zustand ist, da 
 $\varepsilon \in L^{*}$. Wir verbinden den neuen Startzustand mit einem 
 $\varepsilon$-Uebergang zum alten Startzustand und zusaetzlich fuehren wir $\varepsilon$-Uebergaenge

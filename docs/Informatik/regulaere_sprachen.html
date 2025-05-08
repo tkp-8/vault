@@ -97,10 +97,21 @@ Baum mit <span class="math inline">k=|\Sigma|</span></li>
 <hr />
 <h3 id="satz-2">Satz 2</h3>
 <h5
-id="die-regulaeren-sprachen-reg-sind-unter-vereinigung-abgeschlossen">Die
+id="sei-l-eine-regulaere-sprache-dann-existiert-ein-regulaerer-ausdruck-r-mit-lrl">Sei
+<span class="math inline">L</span> eine regulaere Sprache, dann
+existiert ein regulaerer Ausdruck <span class="math inline">R</span> mit
+<span class="math inline">L(R)=L</span></h5>
+<p><strong>Beweis.</strong> <a
+href="satz_von_kleene.html">satz_von_kleene</a></p>
+<hr />
+<h3 id="abschlusseigenschaften">Abschlusseigenschaften</h3>
+<h5
+id="die-regulaeren-sprachen-reg-sind-unter-folgenden-operationen-abgeschlossen">Die
 regulaeren Sprachen <span class="math inline">REG</span> sind unter
-Vereinigung abgeschlossen</h5>
-<p><strong>Beweis.</strong> Verfahren: Produktautomat.<br />
+folgenden Operationen abgeschlossen</h5>
+<ul>
+<li><p><strong>Vereinigung</strong><br />
+<strong>Beweis.</strong> Verfahren: Produktautomat.<br />
 Seien <span class="math inline">L_{1},L_{2}</span> regulaere Sprachen
 mit den zugehoerigen DEAs <span class="math inline">M_{1}, M_{2}</span>.
 Wir konstruieren einen DEA <span
@@ -115,26 +126,20 @@ class="math inline">Q_{3}\coloneqq Q_{1}\times Q_{2}</span> laufen
 lassen. Der Startzustand von <span class="math inline">M_{3}</span> ist
 <span class="math inline">q_{3}=(q_{1},q_{2})</span>.<br />
 Wir definieren die Uebergangsfunktion als <span class="math display">
-  \forall (p,q)\in Q_{3} \ \forall a\in \Sigma: \quad
+\forall (p,q)\in Q_{3} \ \forall a\in \Sigma: \quad
 \delta_{3}((p,q),a)\coloneqq (\delta_{1}(p,a),\delta_{2}(q,a)).
 </span> Als Letztes legen wir die Menge <span
 class="math inline">F_{3}</span> fest. <span class="math display">
-  F_{3}\coloneqq \{(p,q)\in Q_{3}\mid p \in F_{1} \text{ oder } q \in
+F_{3}\coloneqq \{(p,q)\in Q_{3}\mid p \in F_{1} \text{ oder } q \in
 F_{2}\}  
-</span></p>
-<p><strong>Alternativ:</strong> NEA Konstruktion. <img
-src="img/reg_1.png" /></p>
-<h3 id="satz-3">Satz 3</h3>
-<h5
-id="die-regulaeren-sprachen-reg-sind-unter-konkatenation-und-kleene-stern-abgeschlossen">Die
-regulaeren Sprachen <span class="math inline">REG</span> sind unter
-Konkatenation und Kleene Stern abgeschlossen</h5>
-<p><strong>Beweis.</strong> Verfahren: NEA Konstruktion.<br />
-<strong>Konkatenation:</strong> Seien <span
-class="math inline">L_{1},L_{2}</span> regulaere Sprachen mit den
-zugehoerigen DEAs <span class="math inline">M_{1}, M_{2}</span>. Wir
-konstruieren einen NEA <span class="math inline">N</span>, welcher die
-Sprache <span class="math inline">L(M_{3})=L_{1}\circ L_{2}</span>
+</span> <strong>Alternativer Beweis:</strong> NEA Konstruktion. <img
+src="img/reg_1.png" /></p></li>
+<li><p><strong>Konkatenation</strong><br />
+<strong>Beweis.</strong> Verfahren: NEA Konstruktion.<br />
+Seien <span class="math inline">L_{1},L_{2}</span> regulaere Sprachen
+mit den zugehoerigen DEAs <span class="math inline">M_{1}, M_{2}</span>.
+Wir konstruieren einen NEA <span class="math inline">N</span>, welcher
+die Sprache <span class="math inline">L(M_{3})=L_{1}\circ L_{2}</span>
 akzeptiert. Fuer jeden akzeptierten Zustand von <span
 class="math inline">M_{1}</span> fuegen wir einen <span
 class="math inline">\varepsilon</span>-Uebergang zum Startzustand von
@@ -142,8 +147,11 @@ class="math inline">\varepsilon</span>-Uebergang zum Startzustand von
 Als akzeptierende Zustaende von <span class="math inline">N</span>
 waehlen wir nur die akzeptierenden Zustaende von <span
 class="math inline">M_{2}</span><br />
-<strong>Kleene Stern:</strong> Sei <span class="math inline">L\in
-REG</span> und <span class="math inline">M</span> ein DEA, welcher <span
+</p></li>
+<li><p><strong>Kleene Stern</strong><br />
+<strong>Beweis.</strong> Verfahren: NEA Konstruktion.<br />
+Sei <span class="math inline">L\in REG</span> und <span
+class="math inline">M</span> ein DEA, welcher <span
 class="math inline">L</span> akzeptiert. Wir fuegen einen neuen
 Startzustand ein, der gleichzeitig ein akzeptierender Zustand ist, da
 <span class="math inline">\varepsilon \in L^{*}</span>. Wir verbinden
@@ -151,7 +159,8 @@ den neuen Startzustand mit einem <span
 class="math inline">\varepsilon</span>-Uebergang zum alten Startzustand
 und zusaetzlich fuehren wir <span
 class="math inline">\varepsilon</span>-Uebergaenge von den
-akzeptierenden Zustaenden zum neuen Startzustand ein.</p>
+akzeptierenden Zustaenden zum neuen Startzustand ein.</p></li>
+</ul>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a
