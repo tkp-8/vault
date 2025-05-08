@@ -14,6 +14,11 @@ Eine Menge von [Woertern](woerter)
 Komplement der Sprache $L$: \
 Die Sprache $\Sigma ^{*}\setminus L$
 
+##### Abschlusseigenschaften
+Eine Sprachklasse $\mathcal{L}$ ist **abgeschlossen unter der Operation** $\oplus$,
+falls fuer alle $L_{1},L_{2}\in \mathcal{L}$ gilt, dass 
+$$L_{1}\oplus L_{2} \in \mathcal{L}$$
+
 ---
 
 ### Notation

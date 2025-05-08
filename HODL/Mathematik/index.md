@@ -11,7 +11,7 @@ tags: Index
 
 ---
 - [🗃️Analysis](🗃️Analysis)
-
+ 
 
 - [🗃️Lineare_Algebra](🗃️Lineare_Algebra)
 

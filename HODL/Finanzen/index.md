@@ -10,4 +10,9 @@ tags: Index
  
 ### Index
 
+- [🗃️Trading](🗃️Trading)
+     
+    - [📂Technical Analysis](📁Technical_Analysis) 
+
+
 ---

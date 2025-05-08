@@ -14,7 +14,7 @@ tags: Index
 - [Alphabet](alphabet)
 - [Sprachen](sprachen)
 - [Regulaere Sprachen](regulaere_sprachen)
-- [regulaerer_ausdruck](regulaerer_ausdruck)
+- [Regulaere Ausdruecke](regulaere_ausdruecke)
 - [Endliche Automaten](endliche_automaten)
 - [DEA](dea)
 - [NEA](nea)
