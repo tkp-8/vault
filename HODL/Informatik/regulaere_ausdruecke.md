@@ -26,10 +26,15 @@ induktiv wie folg ($S$ und $T$ sind andere RAs)
 - $R=(S\cdot T)\implies L(R)=L(S)\circ L(T)$
 - $R=(S)^{*} \implies L(R) = L(S)^{*}$
 
+--- 
+
+### Konzept
+- Beschreibung der Struktur der Woerter
+ 
 ---
 
 ### Beispiele
-$R_{1} = (\texttt{0}+\texttt{1})^{*}\texttt{0101}(\texttt{0}+\texttt{1})^{*}$
+1.) $R_{1} = (\texttt{0}+\texttt{1})^{*}\texttt{0101}(\texttt{0}+\texttt{1})^{*}$
  
 - $\Sigma=\{\texttt{0},\texttt{1}\}$
 - **Praefix:** $(\texttt{0}+\texttt{1})^{*}$, also ein wort aus $\Sigma ^{*}$ 
@@ -39,7 +44,7 @@ $$
   L(R_{1})=\{w\in \Sigma ^{*}\mid w \text{ enthaelt} \texttt{ 0101 } \text{als Teilwort}\}  
 $$
 
-$R_2=\empty+(\texttt{b}^{*}\texttt{ab}^{*}\texttt{ab}^{*})^{*}$ 
+2.) $R_2=\empty+(\texttt{b}^{*}\texttt{ab}^{*}\texttt{ab}^{*})^{*}$ 
 
 - $\Sigma = \{\texttt{a},\texttt{b}\}$
 - $(\texttt{b}^{*}\texttt{ab}^{*}\texttt{ab}^{*})^{*}$: genau zwei $\texttt{a}$s und 
@@ -55,7 +60,7 @@ $$
 
 ### Satz 1
 ##### Sei $R$ ein regulaerer Ausdruck, dann ist $L(R)$ regulaer
-**Beweis.** [satz_von_kleene](satz_von_kleene)
+**Beweis.** [Satz von Kleene](satz_von_kleene)
 
 
 

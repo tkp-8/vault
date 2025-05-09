@@ -43,6 +43,16 @@ $\overleftarrow{L}\coloneqq \{\overleftarrow{w}\mid w\in L\}$
 
 ---
 
+### Klassifizierung
+##### Chomsky-Hierarchie
+
+- rekursiv aufzaehlbar (Typ 0, $\mathcal{L}_{RE}$)
+- kontextsensitiv (Typ 1, $\mathcal{L}_{ECS}$)
+- kontextfrei (Typ 2, $\mathcal{L}_{CF}$)
+- [regulaer](regulaere_sprachen) (Typ 3, $\mathcal{R}$)
+ 
+---
+
 ### Beispiel
 **Entscheidungsproblem:** "Ist die Zahl $x$ eine Primzahl?"
 $$

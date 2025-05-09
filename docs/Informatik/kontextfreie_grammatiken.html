@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Endliche Automatenend</title>
+  <title>Kontextfreie Grammatiken</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -43,66 +43,23 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Endliche Automatenend</h1>
-<p class="date">2025-05-06 08:36</p>
+<h1 class="title">Kontextfreie Grammatiken</h1>
+<p class="date">2025-05-09 06:35</p>
 <div class="tags">Tags: </div>
 </header>
 <hr />
 <h3 id="definition">Definition</h3>
-<h5 id="endlicher-automat">Endlicher Automat</h5>
-<p>Modell zur Darstellung eines
-<strong>Zustandsueberganssystems</strong> mit begrenztem Speicher</p>
-<h5 id="sprache-des-automaten">Sprache des Automaten</h5>
-<p><span class="math inline">L(M)</span>: Menge aller <a
-href="woerter.html">Woerter</a>, die der Automat <span
-class="math inline">M</span> akzeptiert<br />
-<strong><a href="regulaere_sprachen">Regulaere Sprachen</a>:</strong> <a
-href="sprachen.html">Sprachen</a> fuer die es einen endlichen Automaten
-gibt</p>
-<h5 id="w-lauf"><span class="math inline">w</span>-Lauf</h5>
-<p>Wenn der Lauf sich auf die Eingabe <span class="math inline">w</span>
-bezieht<br />
-<strong>akzeptierender</strong> Lauf/<strong>verwerfender</strong>
-Lauf</p>
-<hr />
-<h3 id="konzept">Konzept</h3>
-<ul>
-<li>Beschreibung der Verarbeitung von Sprachen</li>
-<li>Schwerpunkt ist Erkennen korrekter Woerter</li>
-</ul>
-<hr />
-<h3 id="eigenschaften">Eigenschaften</h3>
-<ul>
-<li>Loesen des <strong>Wortproblems</strong> von bestimmten formalen
-Sprachen</li>
-<li><strong>Eingabe:</strong> <a href="woerter.html">Wort</a>,
-<strong>Ausgabe:</strong> Wahrheitswert, ob Eingabe ein Element der
-zugehoerigen Sprache</li>
-<li>EA <strong>akzeptiert</strong>/<strong>verwirft</strong> das
-Eingabewort</li>
-<li>Lesen des Wortes erfolgt nur <strong>zeichenweise</strong></li>
-<li>EA kann waehrend der Verarbeitung endlich viele
-<strong>Zustaende</strong> annehmen</li>
-<li><strong>Zustandsuebergang</strong> haengt vom aktuellen Zeichen der
-Eingabe ab (Ausnahme <span
-class="math inline">\varepsilon</span>-Uebergaenge)</li>
-<li><strong>Endzustaende</strong> bestimmen den Ausgabewert</li>
-</ul>
-<hr />
-<h3 id="berechnungsmodelle">Berechnungsmodelle</h3>
-<p><a href="dea.html">DEA</a>: Immer <strong>eindeutiger</strong>
-Folgezustand</p>
-<p><a href="nea.html">NEA</a>: <strong>Mehrere</strong> oder
-<strong>keine</strong> Folgezustaende moeglich</p>
-<p><a href="potenzautomat.html">Potenzautomat</a>: Konstruiert aus einem
-<strong>NEA</strong> ein <strong>DEA</strong></p>
-<hr />
-<h3 id="zustandsdiagramm">Zustandsdiagramm</h3>
-<p><img src="img/ea_1.png" /></p>
+<h5 id="kontextfreie-grammatik">kontextfreie Grammatik</h5>
+<p><a href="grammatiken.html">Grammatik</a> <span
+class="math inline">G=(V,\Sigma,P,S)</span> mit einer eingeschraenkten
+Menge von Produktionsregeln <span class="math display">
+  P \subseteq \{(L,R)\mid L\in V, R\in (V\cup \Sigma)^{*}\}  
+</span></p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a
-href="📁Formale_Sprachen&amp;Automaten.html">📂Formale_Sprachen&amp;Automaten</a></p>
+href="/📁Formale_Sprachen%linkAutomaten.html">📂Formale Sprachen
+kontextfreie_grammatiken Automaten</a></p>
 <script>
 renderMathInElement(
     document.body,

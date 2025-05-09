@@ -12,12 +12,18 @@ Modell zur Darstellung eines **Zustandsueberganssystems** mit begrenztem Speiche
 
 
 ##### Sprache des Automaten
-$L(M)$: Menge aller Woerter, die der Automat $M$ akzeptiert\
+$L(M)$: Menge aller [Woerter](woerter), die der Automat $M$ akzeptiert\
 **[Regulaere Sprachen](regulaere_sprachen):** [Sprachen](sprachen) fuer die es einen endlichen Automaten gibt
 
 ##### $w$-Lauf
 Wenn der Lauf sich auf die Eingabe $w$ bezieht\
 **akzeptierender** Lauf/**verwerfender** Lauf
+
+---
+
+### Konzept
+- Beschreibung der Verarbeitung von Sprachen
+- Schwerpunkt ist Erkennen korrekter Woerter
 
 ---
 

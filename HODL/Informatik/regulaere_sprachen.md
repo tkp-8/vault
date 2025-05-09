@@ -40,7 +40,7 @@ Wir muessen zeigen, dass es einen [DEA](dea) $M$ fuer $L$ existiert.\
 
 ### Satz 2 
 ##### Sei $L$ eine regulaere Sprache, dann existiert ein regulaerer Ausdruck $R$ mit $L(R)=L$
-**Beweis.** [satz_von_kleene](satz_von_kleene)
+**Beweis.** [Satz von Kleene](satz_von_kleene)
 
 ---
 
