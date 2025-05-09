@@ -55,6 +55,46 @@ class="math inline">G=(V,\Sigma,P,S)</span> mit einer eingeschraenkten
 Menge von Produktionsregeln <span class="math display">
   P \subseteq \{(L,R)\mid L\in V, R\in (V\cup \Sigma)^{*}\}  
 </span></p>
+<h5 id="sprache-einer-kontextfreien-grammatik">Sprache einer
+kontextfreien Grammatik</h5>
+<p>Die <a href="sprachen.html">Sprache</a> einer kontextfreien Grammatik
+<span class="math inline">G=(V,\Sigma,P,S)</span> ist definiert als
+<span class="math display">
+  L(G)\coloneqq \{w\mid S\Rightarrow ^{*} w \}  
+</span></p>
+<hr />
+<h3 id="beispiel">Beispiel</h3>
+<p><span
+class="math inline">G_{1}=(\{S\},\{\texttt{a},\texttt{b}\},\{(S,\texttt{a}S\texttt{b}),(S,\varepsilon)\},S)</span><br />
+Kurz: <span class="math inline">S\to \texttt{a}S\texttt{b}\mid
+\varepsilon</span><br />
+<a href="woerter.html">Woerter</a>, die wir aus <span
+class="math inline">G_{1}</span> ableiten koennen:</p>
+<ul>
+<li><span class="math inline">S\Rightarrow \varepsilon</span></li>
+<li><span class="math inline">S\Rightarrow
+\texttt{a}S\texttt{b}\Rightarrow \texttt{ab}</span></li>
+</ul>
+<p>Also ist die Sprache von <span class="math inline">G_{1}</span> <span
+class="math display">
+  L(G_{1})=\{\texttt{a}^{n}\texttt{b}^{n}\mid n\ge 0  \}  
+</span></p>
+<hr />
+<h3 id="ableitungsbaum">Ableitungsbaum</h3>
+<p>Folgende Bedingungen muss ein Ableitungsbaum einer kontextfreien
+Grammatik <span class="math inline">G</span> erfuellen</p>
+<ul>
+<li>Alle <strong>inneren Knoten</strong> sind mit Variablen beschriftet
+und in der <strong>Wurzel</strong> steht das Startsymbol</li>
+<li>Alle <strong>Blaetter</strong> sind mit Terminalsymbolen oder <span
+class="math inline">\varepsilon</span> beschriftet</li>
+<li>Wenn ein innerer Knoten die Beschriftung <span
+class="math inline">X</span> aufweist, und seine Kinder (von links nach
+rechts) mit <span class="math inline">x_{1},x_{2},\ldots x_k</span>
+beschriftet sind, dann muss es in <span class="math inline">G</span> die
+Regel <span class="math inline">X\to x_{1},x_{2},\ldots ,x_k</span>
+geben</li>
+</ul>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a

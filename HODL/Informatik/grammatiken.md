@@ -16,8 +16,22 @@ Eine Grammatik $G$ ist ein 4er-Tupel $G = (V,\Sigma,P,S)$ wobai gilt:
 
 ---
 
+### Notation
+**Produktionsregel**\
+$\alpha \to \beta$: $\alpha$ kann ersetzt werden durch $\beta$\
+$\alpha\to \beta\mid \gamma\mid \delta$: Bei mehreren Regeln
+
+**Ableitungsschritt**\
+$w\Rightarrow v$: tatsaechliche Anwendung einer Produktionsregel auf ein Wort,
+wenn es eine Regel $a\to \beta \in P$ gibt \
+$w\Rightarrow ^{*}v$: Sequenz von Ableitungen 
+
+---
+
 ### Konzept
 - Beschreibung des Aufbaus von [Sprachen](sprachen) durch Produktionsregeln
+- Menge von Regeln, die beschreiben, wie man aus einem Symbol durch das wiederholte Ersetzen
+von Teilwoertern ein [Wort](woerter) konstruieren kann
 - Auch fuer komplexe Strukturen
 - Gaengig fuer die Beschreibung von Programmiersprachen
 
