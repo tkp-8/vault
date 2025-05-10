@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Grammatiken</title>
+  <title>CYK-Algorithmus</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -43,68 +43,41 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Grammatiken</h1>
-<p class="date">2025-05-09 07:23</p>
+<h1 class="title">CYK-Algorithmus</h1>
+<p class="date">2025-05-10 02:28</p>
 <div class="tags">Tags: </div>
 </header>
 <hr />
-<h3 id="definition">Definition</h3>
-<h5 id="grammatik">Grammatik</h5>
-<p>Eine Grammatik <span class="math inline">G</span> ist ein 4er-Tupel
-<span class="math inline">G = (V,\Sigma,P,S)</span> wobai gilt:</p>
-<blockquote>
+<h3 id="zweck">Zweck</h3>
 <ul>
-<li><span class="math inline">V</span> ist eine endliche Menge von
-Variablen</li>
-<li><span class="math inline">\Sigma</span> ist eine endliche Menge von
-Terminalsymbolen. Dabei gilt <span class="math inline">V\cap \Sigma\neq
-\empty</span></li>
-<li><span class="math inline">P\subseteq \{(L,R)\mid L,R\in (V\cup
-\Sigma)^{*}\}</span> ist eine endliche Menge von Produktionsregeln</li>
-<li><span class="math inline">S\in V</span> ist das Startsymbol</li>
-</ul>
-</blockquote>
-<h5 id="mehrdeutige-grammatik">Mehrdeutige Grammatik</h5>
-<p>Eine Grammatik, zu der es mehrere Ableitungsbaeume gibt</p>
-<hr />
-<h3 id="notation">Notation</h3>
-<p><strong>Produktionsregel</strong><br />
-<span class="math inline">\alpha \to \beta</span>: <span
-class="math inline">\alpha</span> kann ersetzt werden durch <span
-class="math inline">\beta</span><br />
-<span class="math inline">\alpha\to \beta\mid \gamma\mid \delta</span>:
-Bei mehreren Regeln</p>
-<p><strong>Ableitungsschritt</strong><br />
-<span class="math inline">w\Rightarrow v</span>: tatsaechliche Anwendung
-einer Produktionsregel auf ein Wort, wenn es eine Regel <span
-class="math inline">a\to \beta \in P</span> gibt<br />
-<span class="math inline">w\Rightarrow ^{*}v</span>: Sequenz von
-Ableitungen</p>
-<hr />
-<h3 id="konzept">Konzept</h3>
-<ul>
-<li>Beschreibung des Aufbaus von <a href="sprachen.html">Sprachen</a>
-durch Produktionsregeln</li>
-<li>Menge von Regeln, die beschreiben, wie man aus einem Symbol durch
-das wiederholte Ersetzen von Teilwoertern ein <a
-href="woerter.html">Wort</a> konstruieren kann</li>
-<li>Auch fuer komplexe Strukturen</li>
-<li>Gaengig fuer die Beschreibung von Programmiersprachen</li>
+<li>Wortproblem fuer <a href="kontextfreie_sprachen.html">kontextfreie
+Sprachen</a> loesen</li>
+<li>Entscheidet ob <a href="woerter.html">Wort</a> <span
+class="math inline">w\in L(G)</span></li>
+<li>Nur fuer <a href="kontextfreie_grammatiken">kontextfreie
+Grammatiken</a> in <a href="cnf.html">CNF</a></li>
 </ul>
 <hr />
-<h3 id="klassifizierung">Klassifizierung</h3>
-<h5 id="chomsky-hierarchie">Chomsky-Hierarchie</h5>
+<h3 id="eingabe">Eingabe</h3>
 <ul>
-<li>allgemein (Typ 0)</li>
-<li>kontextsensitiv (Typ 1)</li>
-<li><a href="kontextfreie_grammatiken.html">kontextfrei</a> (Typ 2)</li>
-<li>regulaer (Typ 3)</li>
+<li>Wort <span class="math inline">w=w_{1},w_{2},\ldots ,w_n</span></li>
+<li>Grammatik <span class="math inline">G=(V,\Sigma,P,S)</span></li>
+</ul>
+<hr />
+<h3 id="initialisierung">Initialisierung</h3>
+<ul>
+<li>Sei <span class="math inline">w[j,j]</span> das Teilwort von <span
+class="math inline">w</span>, welches mit dem <span
+class="math inline">i</span>-ten Zeichen beginnt und mit dem <span
+class="math inline">j</span>-ten Zeichen endet. <span
+class="math display">
+W_{i,j}\coloneqq \{X\in V\mid X\Rightarrow ^{*} w[i,j]\}  
+</span></li>
 </ul>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a
-href="/📁Formale_Sprachen%linkAutomaten.html">📂Formale Sprachen
-Grammatiken Automaten</a></p>
+href="/kontextfreie_sprachen.html">Kontextfreie Sprachen</a></p>
 <script>
 renderMathInElement(
     document.body,

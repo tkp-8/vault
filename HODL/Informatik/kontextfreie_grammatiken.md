@@ -45,9 +45,10 @@ Folgende Bedingungen muss ein Ableitungsbaum einer kontextfreien Grammatik $G$ e
 mit $x_{1},x_{2},\ldots x_k$ beschriftet sind, dann muss es in $G$ die Regel $X\to x_{1},x_{2},\ldots ,x_k$ 
 geben
 
-
-
 ----
+
+### Chomsky Normalform
+[CNF](cnf)
 
 ----
 **Backlinks:**

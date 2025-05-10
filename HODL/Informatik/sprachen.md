@@ -48,7 +48,7 @@ $\overleftarrow{L}\coloneqq \{\overleftarrow{w}\mid w\in L\}$
 
 - rekursiv aufzaehlbar (Typ 0, $\mathcal{L}_{RE}$)
 - kontextsensitiv (Typ 1, $\mathcal{L}_{ECS}$)
-- kontextfrei (Typ 2, $\mathcal{L}_{CF}$)
+- [kontextfrei](kontextfreie_sprachen) (Typ 2, $\mathcal{L}_{CF}$)
 - [regulaer](regulaere_sprachen) (Typ 3, $\mathcal{R}$)
  
 ---

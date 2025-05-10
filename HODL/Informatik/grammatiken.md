@@ -7,12 +7,16 @@ tags:
 ----
 
 ### Definition
+##### Grammatik
 Eine Grammatik $G$ ist ein 4er-Tupel $G = (V,\Sigma,P,S)$ wobai gilt:
 
 > - $V$ ist eine endliche Menge von Variablen
 > - $\Sigma$ ist eine endliche Menge von Terminalsymbolen. Dabei gilt $V\cap \Sigma\neq \empty$
 > - $P\subseteq \{(L,R)\mid L,R\in (V\cup \Sigma)^{*}\}$ ist eine endliche Menge von Produktionsregeln 
 > - $S\in V$ ist das Startsymbol
+
+##### Mehrdeutige Grammatik
+Eine Grammatik, zu der es mehrere Ableitungsbaeume gibt
 
 ---
 
