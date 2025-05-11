@@ -1,7 +1,7 @@
 ---
 title: CNF
 date: 2025-05-10 01:04
-tags: 
+tags: normalform 
 ---
 
 ----
