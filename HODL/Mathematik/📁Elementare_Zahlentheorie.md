@@ -15,5 +15,6 @@ tags: Index
 - [Satz_des_Euklid](satz_des_euklid)
 - [Das_Sieb_des_Eratosthenes](das_sieb_des_eratosthenes) 
 - [Mersenne'sche Primzahlen](mersennesche_primzahlen)
+- [Kongruenzen](kongruenzen)
  
 ---
