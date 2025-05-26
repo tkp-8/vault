@@ -62,15 +62,15 @@ class="math inline">a-b</span> ist.</p>
 <p><strong><span class="math inline">a</span> kongruent zu <span
 class="math inline">b</span> modulo <span
 class="math inline">m</span></strong><br />
-<span class="math inline">a\equiv b \mod{m}</span></p>
+<span class="math inline">a\equiv b \pmod{m}</span></p>
 <p><strong>Wenn nicht</strong><br />
-<span class="math inline">a\not\equiv b \mod{m}</span></p>
+<span class="math inline">a\not\equiv b \pmod{m}</span></p>
 <hr />
 <h3 id="bemerkung">Bemerkung</h3>
 <p>Seien <span class="math inline">a,b\in \mathbb{Z}</span>, und sei
 <span class="math inline">m\in \mathbb{N}, \ m&gt;1</span>. <span
 class="math display">
-  a\equiv b\mod{m}\Leftrightarrow \exists k\in Z: a=b+km
+  a\equiv b\pmod{m}\Leftrightarrow \exists k\in Z: a=b+km
 </span> <strong>Beweis</strong><br />
 <span class="math inline">\Rightarrow</span>: Es gilt <span
 class="math inline">m\mid (a-b)</span>, also gibt es ein <span
@@ -81,17 +81,17 @@ class="math inline">k\in \mathbb{Z}</span><br />
 <span class="math inline">\Leftarrow</span>: Es folgt <span
 class="math inline">a-b=km</span>, also <span class="math inline">m\mid
 (a-b)</span>. Somi gilt <span class="math inline">a\equiv b
-\mod{m}</span>.</p>
+\pmod{m}</span>.</p>
 <hr />
 <h3 id="eigenschaften">Eigenschaften</h3>
 <p><strong>Proposition 1:</strong> Seien <span
 class="math inline">a,b\in Z</span> und sei <span
 class="math inline">m\in N, \ m&gt;1</span>. <span class="math display">
-  a\equiv b \mod{m} \Leftrightarrow a \text{ und } b \text{ haben bei
+  a\equiv b \pmod{m} \Leftrightarrow a \text{ und } b \text{ haben bei
 der Division durch } m
   \text{ mit Rest denselben Rest}
 </span> <strong>Beweis:</strong> Sei <span class="math inline">a\equiv b
-\mod{m}</span>. Wir teilen <span class="math inline">a</span> und <span
+\pmod{m}</span>. Wir teilen <span class="math inline">a</span> und <span
 class="math inline">b</span> durch <span class="math inline">m</span>
 mit Rest und erhalten <span class="math display">
   a=q_{1}m+r_{1} \text{ und } b=q_{2}m+r_{2} \text{ mit } 0\le
@@ -114,11 +114,70 @@ class="math inline">b=q_{2}m+r</span> mit <span class="math inline">0\le
 r\le m</span>. Dann gilt <span
 class="math inline">a-b=(q_{1}-q_{2})m</span>, also <span
 class="math inline">m\mid (a-b)</span>, und es gilt <span
-class="math inline">a\equiv b \mod{m}</span>.</p>
+class="math inline">a\equiv b \pmod{m}</span>.</p>
 <p><strong>Korollar zu Proposition 1</strong>: <span
 class="math display">
-  a\equiv b \mod{m} \Leftrightarrow a\text{ mod }{m}=b\text{ mod }{m}
+  a\equiv b \pmod{m} \Leftrightarrow a\text{ mod }{m}=b\text{ mod }{m}
 </span></p>
+<hr />
+<h3 id="rechenregeln">Rechenregeln</h3>
+<p>Fuer alle <span class="math inline">a,b,c\in \mathbb{Z}</span> und
+alle <span class="math inline">m\in \mathbb{N}, m&gt;1</span>, gilt: 1.
+<span class="math inline">a\equiv a \pmod{m}</span> 2. Ist <span
+class="math inline">a\equiv b \pmod{m}</span>, so ist <span
+class="math inline">b \equiv a \pmod{m}</span> 3. Sind <span
+class="math inline">a\equiv b \pmod{m}</span> und <span
+class="math inline">b\equiv c\pmod{m}</span>, so gilt <span
+class="math inline">a\equiv c \pmod{m}</span> 4. Ist <span
+class="math inline">a\equiv b \pmod{m}</span>, so gilt <span
+class="math inline">a+c\equiv b+c \pmod{m}</span> 5. Ist <span
+class="math inline">a\equiv b \pmod{m}</span>, so gilt <span
+class="math inline">ac\equiv bc \pmod{m}</span> 6. Ist <span
+class="math inline">ac\equiv bc \pmod{m}</span>, und gilt <span
+class="math inline">\text{ggT}(c,m)=1</span>, so folgt <span
+class="math inline">a\equiv b \pmod{m}</span> 7. Ist <span
+class="math inline">ac \equiv bc \pmod{m}</span>, und gilt <span
+class="math inline">\text{ggT}(c,m)=d</span>, so folgt <span
+class="math inline">a\equiv b \pmod{\frac{m}{d}}</span> 8. Ist <span
+class="math inline">a\equiv b \pmod{m}</span>, so gilt <span
+class="math inline">a^{n}\equiv b^{n}\pmod{m}</span> fuer alle <span
+class="math inline">n\in \mathbb{N}</span></p>
+<p><strong>Beweis:</strong> 1. Es gilt <span class="math inline">m\mid
+(a-a)</span> 2. Es gilt <span class="math inline">m\mid (a-b)</span>,
+also <span class="math inline">m\mid -(a-b)</span>, und somit <span
+class="math inline">m\mid (b-a)</span> 3. Es gelten <span
+class="math inline">m\mid (a-b)</span> und $m(b-c). Dann gibt es <span
+class="math inline">x,y \in \mathbb{Z}</span> mit <span
+class="math inline">mx=a-b</span> und <span
+class="math inline">my=b-c</span>. Es folgt <span
+class="math inline">m(x+y)=a-c</span>, also <span
+class="math inline">m\mid (a-c)</span> 4. Wenn <span
+class="math inline">m\mid (a-b)</span>, so folgt <span
+class="math inline">m\mid (a+c-b-c)</span> 5. Wenn <span
+class="math inline">m\mid (a-b)</span>, so folgt <span
+class="math inline">m\mid c(a-b)</span>, also <span
+class="math inline">m\mid ac-bc</span> 6. Es gilt <span
+class="math inline">m\mid c(a-b)</span> und wegen <span
+class="math inline">\text{ggT}(c,m)=1</span> folgt <span
+class="math inline">m\mid (a-b)</span> 7. Es gilt <span
+class="math inline">m\mid c(a-b)</span>, also <span
+class="math inline">\frac{m}{d}\mid \frac{c}{d}(a-b)</span>. Da <span
+class="math inline">\text{ggT}(\frac{m}{d},\frac{c}{d})=1</span> , folgt
+<span class="math inline">\frac{m}{d}\mid (a-b)</span> 8. Es gilt <span
+class="math inline">m\mid (a-b)</span>. Ausserdem gilt <span
+class="math inline">(a-b)\mid a^{n}-b^{n}</span>, da <span
+class="math display">
+\begin{align*}
+  &amp;\quad \; (a-b)(a^{n-1}+a^{n-2}b+\cdots+ab^{n-2}+b^{n-1}    )\\
+  &amp;= a^{n} -a^{n-1}b+a^{n-1}b
+-\cdots-ab^{n-1}+ab^{n-1}-b^{n}      \\
+  &amp;= a^{n}-b^{n}  
+\end{align*}
+</span></p>
+<hr />
+<h3 id="verwandt">Verwandt</h3>
+<p><a href="restklassen.html">Restklassen</a> <a
+href="lineare_kongruenzen.html">Lineare Kongruenzen</a></p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a

@@ -44,6 +44,9 @@ $\Sigma^{*}\coloneqq \bigcup ^{\infty}_{k=0}\Sigma ^{k}$
 **Menge aller Woerter ausschliesslich** $\varepsilon$\
 $\Sigma ^{+} \coloneqq \bigcup_{k=1}^{\infty}\Sigma ^{k}=\Sigma ^{*} \setminus \{\varepsilon\}$
 
+**Kodierung von Objekten $\cdot$ als Woerter**\
+$\langle \cdot \rangle$
+
 **Konkatenation** $\cdot$ \
 Hintereinanderreihung von Woertern $u,v$\
 $uv$ oder $u\cdot v$\

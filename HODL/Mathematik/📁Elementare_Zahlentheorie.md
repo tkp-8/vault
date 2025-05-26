@@ -16,5 +16,6 @@ tags: Index
 - [Das_Sieb_des_Eratosthenes](das_sieb_des_eratosthenes) 
 - [Mersenne'sche Primzahlen](mersennesche_primzahlen)
 - [Kongruenzen](kongruenzen)
+- [Restklassen](restklassen)
  
 ---

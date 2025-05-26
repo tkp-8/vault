@@ -75,13 +75,47 @@ class="math inline">w</span> berechnet wird</strong><br />
 <p><strong>Von einem Python-Programm erkannte Sprache</strong><br />
 <span class="math inline">L(P)</span></p>
 <hr />
-<h3 id="lemma">Lemma</h3>
+<h3 id="lemma-1">Lemma 1</h3>
 <h5
 id="die-menge-l-subseteq-sigma-aller-sprachen-ueber-sigma-ist-ueberzaehlbar.">Die
 Menge <span class="math inline">\{L \subseteq \Sigma ^{*} \}</span>
 aller Sprachen ueber <span class="math inline">\Sigma</span> ist
 ueberzaehlbar.</h5>
-<p><strong>Beweis.</strong></p>
+<p><strong>Verfahren:</strong> Diagonalisierungsverfahren</p>
+<p><strong>Beweis.</strong> Sei <span class="math inline">L_i</span> die
+<span class="math inline">i</span>-te Sprache in der abgeleiteten
+Nummerierung. Wir tragen alle Sprachen in eine unbeschraenkte Tabelle
+<span class="math inline">T</span> ein. Hierbei werden wir <span
+class="math inline">L_i</span> in die <span
+class="math inline">i</span>-te Zeile eintragen. Die Spalten von <span
+class="math inline">T</span> sind mit Woertern aus <span
+class="math inline">\Sigma ^{*}</span> beschriftet. Die beschriftung der
+<span class="math inline">i</span>-ten Spalte bezeichnen wir mit <span
+class="math inline">w_i</span>. Wir markieren die Woerter, welche in
+<span class="math inline">L_i</span> enthalten sind, indem wir in der
+korrespondierenden Zeile eine 1 eintragen. Wenn nicht 0. So koennen wir
+jede Sprache aus <span class="math inline">L</span> als eine unendliche
+Sequenz von 0en und 1en angeben. Diese Folge nennen wir die
+<strong>Signatur der Sprache</strong>. Wir konstruieren nun eine Sprache
+<span class="math inline">L^{\prime}</span>, welche in der Nummerierung
+der <span class="math inline">L_i</span> fehlt. Dazu negieren wir die
+Diagonale der Tabelle und interpretieren die so erhaltene Folge als
+Signatur von <span class="math inline">L^{\prime}</span>. <span
+class="math display">
+  L^{\prime}\coloneqq \{w_i\mid w_i\notin L_i\}   
+</span> Die Sprache <span class="math inline">L^{\prime}</span> fehlt in
+der Nummerierung der <span class="math inline">L_i</span>, da sie sich
+von jeder dieser Sprachen unterscheidet.</p>
+<hr />
+<h3 id="korollar-1">Korollar 1</h3>
+<h5 id="es-gibt-sprachen-die-nicht-erkennbar-sind.">Es gibt Sprachen die
+nicht erkennbar sind.</h5>
+<p><strong>Beweis.</strong> Nach Lemma 1 gibt es keine Bijektion
+zwischen der Menge der Python-Programme und der Menge aller Sprachen
+ueber <span class="math inline">\Sigma ^{*}</span>. Somit gibt es auch
+keine Bijektion zwischen den erkennbaren Sprachen ueber <span
+class="math inline">\Sigma</span> und allen Sprachen ueber <span
+class="math inline">\Sigma</span>.</p>
 <hr />
 <hr />
 <p><strong>Backlinks:</strong> - <a

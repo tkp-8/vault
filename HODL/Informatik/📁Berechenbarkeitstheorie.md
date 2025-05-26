@@ -12,3 +12,4 @@ tags: Index
 ---
 
 - [Erkennbarkeit](erkennbarkeit)
+- Entscheidbarkeit
